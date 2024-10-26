@@ -1,140 +1,116 @@
 // import all images from assets/images directory
-import img01 from "../all-images/cars-img/nissan-offer.png";
-import img02 from "../all-images/cars-img/offer-toyota.png";
-import img03 from "../all-images/cars-img/bmw-offer.png";
-import img04 from "../all-images/cars-img/nissan-offer.png";
-import img05 from "../all-images/cars-img/offer-toyota.png";
-import img06 from "../all-images/cars-img/mercedes-offer.png";
-import img07 from "../all-images/cars-img/toyota-offer-2.png";
-import img08 from "../all-images/cars-img/mercedes-offer.png";
+import img01 from "../../assets/all-images/AC.jpg"; // AC Rental
+import img02 from "../../assets/all-images/AC.jpg"; // Room Oil Heater Rental
+import img03 from "../../assets/all-images/WashingM.jpg"; // Electrician & Plumber Services
+import img04 from "../../assets/all-images/RO.jpg"; // Inverter Rental & Service
+import img05 from "../../assets/all-images/RO.jpg"; // Construction Equipment Rental
+import img06 from "../../assets/all-images/RO.jpg"; // Refrigerator Rental
+import img07 from "../../assets/all-images/RO.jpg"; // Geyser Rental
+import img08 from "../../assets/all-images/RO.jpg"; // RO Water Purifier Rental
+import img09 from "../../assets/all-images/RO.jpg"; // Washing Machine Rental
+import img10 from "../../assets/all-images/RO.jpg"; // LED/Television Rental
+
 
 const carData = [
   {
     id: 1,
-    brand: "Tesla",
     rating: 112,
-    carName: "Tesla Malibu",
+    Name: "AC Rental",
     imgUrl: img01,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 650,
+    Qprice: 50,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Rent high-quality air conditioning units for your comfort and convenience. Perfect for any occasion.",
   },
-
   {
     id: 2,
-    brand: "Toyota",
     rating: 102,
-    carName: "Toyota Aventador",
+    Name: "Room Oil Heater Rental",
     imgUrl: img02,
-    model: "Model-2022",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 300,
+    Qprice: 30,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Stay warm this winter with our efficient oil heater rentals. Ideal for rooms of any size.",
   },
-
   {
     id: 3,
-    brand: "BMW",
     rating: 132,
-    carName: "BMW X3",
+    Name: "Electrician & Plumber Services",
     imgUrl: img03,
-    model: "Model-2022",
-    price: 65,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 50,
+    Qprice: 20,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Reliable and professional electrician and plumber services at your disposal for any repairs.",
   },
-
   {
     id: 4,
-    brand: "Nissan",
     rating: 102,
-    carName: "Nissan Mercielago",
+    Name: "Inverter Rental & Service",
     imgUrl: img04,
-    model: "Model-2022",
-    price: 70,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 200,
+    Qprice: 25,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Keep your power supply uninterrupted with our inverter rentals and servicing options.",
   },
-
   {
     id: 5,
-    brand: "Ferrari",
     rating: 94,
-    carName: "Ferrari Camry",
+    Name: "Construction Equipment Rental",
     imgUrl: img05,
-    model: "Model-2022",
-    price: 45,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 1000,
+    Qprice: 150,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Wide range of construction equipment available for rent to assist your building projects.",
   },
-
   {
     id: 6,
-    brand: "Mercedes",
     rating: 119,
-    carName: "Mercedes Benz XC90",
+    Name: "Refrigerator Rental",
     imgUrl: img06,
-    model: "Model-2022",
-    price: 85,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 400,
+    Qprice: 60,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Rent refrigerators for your home or events. We offer various sizes to meet your needs.",
   },
-
   {
     id: 7,
-    brand: "Audi",
     rating: 82,
-    carName: "Audi Fiesta",
+    Name: "Geyser Rental",
     imgUrl: img07,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 300,
+    Qprice: 40,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Enjoy hot water whenever you need it with our geyser rentals. Suitable for all types of households.",
   },
-
   {
     id: 8,
-    brand: "Colorado",
     rating: 52,
-    carName: "Rolls Royce Colorado",
+    Name: "RO Water Purifier Rental",
     imgUrl: img08,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
+    Yprice: 350,
+    Qprice: 45,
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Get safe drinking water with our RO water purifier rentals. Easy to install and maintain.",
+  },
+  {
+    id: 9,
+    rating: 120,
+    Name: "Washing Machine Rental",
+    imgUrl: img09,
+    Yprice: 250,
+    Qprice: 35,
+    description:
+      "Convenient washing machine rentals to keep your clothes fresh and clean without the hassle.",
+  },
+  {
+    id: 10,
+    rating: 75,
+    Name: "LED/Television Rental",
+    imgUrl: img10,
+    Yprice: 600,
+    Qprice: 70,
+    description:
+      "Enjoy your favorite shows and movies with our LED/television rentals. Various sizes available.",
   },
 ];
 

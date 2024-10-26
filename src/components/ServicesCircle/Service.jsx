@@ -1,45 +1,45 @@
 import React from "react";
+import WM from "../../assets/all-images/WashingM.jpg";
+import AC from "../../assets/all-images/AC.jpg";
+import RO from "../../assets/all-images/RO.jpg";
 
 const Services = () => {
   const services = [
     {
-      name: "AC Rental",
-      image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "AC",
+      image: AC,
       link: "/ac-rental",
     },
     {
-      name: "Washing Machine Rental",
-      image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Washing Machine",
+      image: WM,
       link: "/washing-machine-rental",
     },
     {
-      name: "RO Water Purifier Rental",
-      image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "RO Water Purifier",
+      image: RO,
       link: "/ro-water-purifier-rental",
     },
     {
-      name: "Refrigerator Rental",
+      name: "Refrigerator",
       image:
         "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "/refrigerator-rental",
     },
     {
-      name: "Geyser Rental",
+      name: "Geyser",
       image:
         "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "/geyser-rental",
     },
     {
-      name: "Inverter Rental",
+      name: "Inverter",
       image:
         "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "/inverter-rental",
     },
     {
-      name: "Construction Equipment Rental",
+      name: "Construction Equipment",
       image:
         "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "/construction-equipment-rental",

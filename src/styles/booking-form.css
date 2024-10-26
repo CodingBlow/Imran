@@ -1,14 +1,9 @@
 .booking__form {
-  width: 47.5%;
-}
-
-.booking__form input {
-  padding: 8px 15px;
-  border: 1px solid #7c8a972a;
-  color: #7c8a97;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
+.booking__form input,
 .booking__form select,
 .textarea {
   width: 100%;
@@ -16,6 +11,11 @@
   color: #7c8a97;
   border: 1px solid #7c8a972a;
   border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.booking__form input {
+  padding: 8px 15px;
 }
 
 .time__picker::before {
@@ -30,14 +30,14 @@
   outline: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .booking__form {
-    width: 100%;
+@media only screen and (min-width: 769px) {
+  .booking__form-half {
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 
-  .booking__form input,
-  .textarea,
-  .booking__form select {
-    font-size: 0.8rem;
+  .booking__form-half.me-4 {
+    margin-right: 2%;
   }
 }
