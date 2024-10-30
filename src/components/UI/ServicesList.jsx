@@ -13,7 +13,6 @@ const ServicesList = () => {
 
   return (
     <>
-     <CommonSection title="Services" />
       <Row>
         {displayedServices.map((item) => (
           <ServiceItem item={item} key={item.id} />
