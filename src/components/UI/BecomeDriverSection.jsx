@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/become-driver.css";
 import { Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
 
 import driverImg from "../../assets/all-images/toyota-offer-2.png"; // Consider updating this image to reflect your services
 
@@ -22,8 +23,16 @@ const BecomeDriverSection = () => {
               washing machines, RO water purifiers, and more!
             </p>
 
-            <button className="btn become__driver-btn mt-4">
+            <button 
+            className="btn become__driver-btn mt-4">
+              <Link
+              to="/contact"
+              style={{
+                textDecoration: "none"
+              }}
+              >
               Join Our Team
+              </Link>
             </button>
           </Col>
         </Row>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Col, Row, Button } from "reactstrap";
 import "../../styles/services-list.css";
 import servicesData from "../../assets/data/serviceData";
+import { Link } from "react-router-dom";
 
 const ServicesList = () => {
   const [showAll, setShowAll] = useState(false);
@@ -56,12 +57,19 @@ const ServicesList = () => {
 const ServiceItem = ({ item }) => (
   <Col lg="4" md="4" sm="6" className="mb-3">
     <div className="service__item">
+      <Link
+      to="/contact"
+      style={{
+        textDecoration: "none"
+      }}
+      >
       <span className="mb-3 d-inline-block">
         <i className={item.icon} />
       </span>
 
       <h6>{item.title}</h6>
       <p className="section__description">{item.desc}</p>
+      </Link>
     </div>
   </Col>
 );
