@@ -7,6 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 
 import driveImg from "../assets/all-images/drive.jpg";
+import SetFor3rd from "../assets/all-images/refrigerator-Repair.jpg";
 import OurMembers from "../components/UI/OurMembers";
 import "../styles/about.css";
 
@@ -21,28 +22,22 @@ const About = () => {
           <Row>
             <Col lg="6" md="6" sm="12">
               <div className="about__page-img">
-                <img src={driveImg} alt="" className="w-100 rounded-3" />
+                <img src={SetFor3rd} alt="" className="w-100 rounded-3" />
               </div>
             </Col>
 
             <Col lg="6" md="6" sm="12">
               <div className="about__page-content">
                 <h2 className="section__title">
-                  We Are Committed To Provide Safe Ride Solutions
+                Your Trusted Partner for Affordable Rental Solutions
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                At <b>Smart Eagar Enterprise</b>, we offer a wide range of affordable, high-quality rental solutions tailored to make your life easier. From essential home appliances like ACs, refrigerators, and washing machines to seasonal items like room heaters and geysers, we ensure comfort and convenience for every season.
                 </p>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                Need a reliable RO water purifier for clean drinking water or a TV for entertainment? We’ve got you covered! Additionally, our inverter rentals keep you powered during outages, while construction equipment and stabilizer rentals support your project needs. For added convenience, we also provide professional electrician and plumber services. With us, renting is simple, cost-effective, and worry-free—perfect for any situation.
                 </p>
 
                 <div className=" d-flex align-items-center gap-3 mt-4">
@@ -52,7 +47,7 @@ const About = () => {
 
                   <div>
                     <h6 className="section__subtitle">Need Any Help?</h6>
-                    <h4>+00123456789</h4>
+                    <h4>+91-9306174774</h4>
                   </div>
                 </div>
               </div>

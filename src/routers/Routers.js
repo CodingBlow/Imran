@@ -9,6 +9,9 @@ import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Ac from "../pages/ac";
+import PrivacyPolicy from "../components/UI/Privacy_Policy";
+import BookingForm from "../components/UI/BookingForm";
+import ServicesList from "../components/UI/ServicesList";
 
 const Routers = () => {
   return (
@@ -23,6 +26,9 @@ const Routers = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/ac" element={<Ac />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
+      <Route path="/BookingForm" element={<BookingForm />} />
+      <Route path="/Services" element={<ServicesList />} />
     </Routes>
   );
 };
