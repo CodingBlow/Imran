@@ -24,7 +24,8 @@ const Footer = () => {
                 <Link to="/home" className="d-flex align-items-center gap-2">
                   <i className="ri-tools-line"></i>
                   <span>
-                    Zuridox <br /> Rental Services
+                  Smart <br /> Eagar Enterprise
+                     {/* Smart Eagar Enterprise */}
                   </span>
                 </Link>
               </h1>
@@ -50,12 +51,19 @@ const Footer = () => {
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
               <h5 className="footer__link-title">Head Office</h5>
-              <p className="office__info">123 Zindabazar, Sylhet, Bangladesh</p>
-              <p className="office__info">Phone: +0995345875365</p>
-              <p className="office__info">Email: info@zuridox.com</p>
-              <p className="office__info">Office Time: 10am - 7pm</p>
+              <p className="office__info">Badshahpur Office
+               Teekali-Akhlimpur Road,
+               City- Badshahpur,
+               Haryana, Pin - 122101</p>
+              <p className="office__info">Phone : +91-9306174774</p>
+              <p className="office__info">Email : Info@smarteagar.com</p>
+              <p className="office__info">Office Time : 08am - 10pm</p>
             </div>
           </Col>
+           {/* Badshahpur Office
+Teekali-Akhlimpur Road,
+City- Badshahpur,
+Haryana, Pin - 122101 */}
 
           <Col lg="3" md="4" sm="12">
             <div className="mb-4">

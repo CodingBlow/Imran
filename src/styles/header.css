@@ -78,11 +78,14 @@
 }
 
 .header__btn {
-  background: #000d6b !important;
+  background:#000d6b !important;
   padding: 10px 20px;
   border: none;
   outline: none;
   border-radius: 5px;
+}
+.whatsapp_button{
+  background:  #25d366 !important;
 }
 
 .header__btn a {

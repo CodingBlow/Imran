@@ -37,7 +37,8 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i className="ri-phone-fill"></i> +1-202-555-0149
+                  <i className="ri-phone-fill"></i> +91-9306174774
+
                 </span>
               </div>
             </Col>
@@ -55,12 +56,13 @@ const Header = () => {
                   <Link to="/home" className="d-flex align-items-center gap-2">
                     <i className="ri-tools-line"></i>
                     <span>
-                      Rent <br /> Service
+                    Smart <br /> Eagar Enterprise
                     </span>
                   </Link>
                 </h1>
               </div>
             </Col>
+            {/* Smart Eagar Enterprise */}
 
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
@@ -68,11 +70,16 @@ const Header = () => {
                   <i className="ri-earth-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Gurugram</h4>
-                  <h6>Sector 16, Mewat</h6>
+                  <h4>Badshahpur Office</h4>
+                  <h6>Haryana, 122101</h6>
                 </div>
               </div>
             </Col>
+
+            {/* Badshahpur Office
+Teekali-Akhlimpur Road,
+City- Badshahpur,
+Haryana, Pin - 122101 */}
 
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
@@ -80,24 +87,75 @@ const Header = () => {
                   <i className="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Sunday to Friday</h4>
-                  <h6>10am - 7pm</h6>
+                  <h4>All Day</h4>
+                  <h6>8am - 10pm</h6>
                 </div>
               </div>
             </Col>
 
             <Col
-              lg="2"
-              md="3"
-              sm="0"
-              className="d-flex align-items-center justify-content-end"
-            >
-              <button className="header__btn btn">
-                <Link to="/contact">
-                  <i className="ri-phone-line"></i> Request a call
-                </Link>
-              </button>
-            </Col>
+  lg="2"
+  md="3"
+  sm="0"
+  className="d-flex align-items-center justify-content-end"
+  style={{ 
+    gap: "20px"
+
+   }}
+>
+  <button 
+    className="header__btn btn"
+    style={{
+      whiteSpace: "nowrap",
+      padding: "8px 15px",
+      border: "none",
+      borderRadius: "5px",
+      cursor: "pointer"
+    }}
+  >
+    <Link 
+      to="/contact"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "5px",
+        textDecoration: "none"
+      }}
+    >
+      <i className="ri-phone-line"></i> Request a call
+    </Link>
+  </button>
+
+  <button 
+    className="whatsapp_button"
+    style={{
+      backgroundColor:"green",
+      border: "none",
+      padding: "8px 15px",
+      borderRadius: "5px",
+      transition: "background 0.3s",
+      cursor: "pointer",
+      whiteSpace: "nowrap"
+    }}
+    // onMouseOver={(e) => e.currentTarget.style.background = "#128C7E"}
+    // onMouseOut={(e) => e.currentTarget.style.background = "#25D366"}
+  >
+    <a 
+      href="https://wa.me/919306186668" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "0px",
+        color: "white",
+        textDecoration: "none",
+      }}
+    >
+      <i className="ri-whatsapp-line"></i> WhatsApp
+    </a>
+  </button>
+</Col>
           </Row>
         </Container>
       </div>

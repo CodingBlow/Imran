@@ -13,7 +13,7 @@
 
 .slider__item-02 {
   background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-    url("https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    url("../assets/all-images/tv-repair-slide.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +22,13 @@
 .slider__item-03 {
   background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
     url("https://res.cloudinary.com/urbanclap/image/upload/images/supply/customer-app-supply/1687327309842-5c0a9e.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__item-04 {
+  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+    url("../assets/all-images/refrigerator-Repair.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
