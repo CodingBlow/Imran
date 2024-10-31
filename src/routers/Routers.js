@@ -7,7 +7,7 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
-import AcPage from "../pages/AcPage"
+import AcPage from "../pages/AcPage";
 import PrivacyPolicy from "../components/UI/Privacy_Policy";
 import BookingForm from "../components/UI/BookingForm";
 import ServicesList from "../components/UI/ServicesList";
