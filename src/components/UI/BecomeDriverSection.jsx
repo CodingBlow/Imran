@@ -16,22 +16,21 @@ const BecomeDriverSection = () => {
 
           <Col lg="6" md="6" sm="12">
             <h2 className="section__title become__driver-title">
-              Want to Earn by Providing Quality Rental Services?
+            Expert Repairs & Reliable Rental Services for Your Home Essentials
             </h2>
             <p className="section__description">
-              Join us and start earning by offering your services in AC rentals,
-              washing machines, RO water purifiers, and more!
+            Get expert repairs and reliable services in AC rentals, washing machines, RO water purifiers, and more!
             </p>
 
             <button 
             className="btn become__driver-btn mt-4">
               <Link
-              to="/contact"
+              to="/BookingForm"
               style={{
                 textDecoration: "none"
               }}
               >
-              Join Our Team
+              Repair Now
               </Link>
             </button>
           </Col>
