@@ -7,7 +7,7 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
-import AC from "../pages/AC";
+import AcPage from "../pages/AcPage"
 import PrivacyPolicy from "../components/UI/Privacy_Policy";
 import BookingForm from "../components/UI/BookingForm";
 import ServicesList from "../components/UI/ServicesList";
@@ -25,7 +25,7 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/ac" element={<AC />} />
+      <Route path="/ac" element={<AcPage />} />
       <Route path="/washing_machine" element={<W_Machine />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
