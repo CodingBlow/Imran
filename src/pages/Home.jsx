@@ -99,6 +99,9 @@ const Home = () => {
       </section>
 
       {/* Google Map */}
+      {/* <div>
+       <h1 style={"Color:Black"}>Reach Us at</h1>
+      </div> */}
       <GoogleMap />
 
       {/* =============== blog section =========== */}

@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/CommonSection";
-import services from "./HotServices";
-import ACItem from "./ACItems";
+import Helmet from "../../components/Helmet/Helmet";
+import CommonSection from "../../components/UI/CommonSection";
+import services from "../HotServices";
+import RefItem from "./RefrigeratorItem";
 
-const ACPage = () => {
-  const acServices = services.filter((service) => service.code === 100);
+
+const RefPage = () => {
+  const acServices = services.filter((service) => service.code === 104);
 
   return (
     <Helmet title="Air Conditioners">
@@ -16,7 +17,7 @@ const ACPage = () => {
           <Row>
             {acServices.map((item) => (
               <Col lg="4" md="6" key={item.code}>
-                <ACItem item={item} />
+                <RefItem item={item} />
               </Col>
             ))}
           </Row>
@@ -26,4 +27,4 @@ const ACPage = () => {
   );
 };
 
-export default ACPage;
+export default RefPage;

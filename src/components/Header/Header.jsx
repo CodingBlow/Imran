@@ -155,6 +155,35 @@ Haryana, Pin - 122101 */}
       <i className="ri-whatsapp-line"></i> WhatsApp
     </a>
   </button>
+  <button 
+    className="whatsapp_button"
+    style={{
+      backgroundColor:"green",
+      border: "none",
+      padding: "8px 15px",
+      borderRadius: "5px",
+      transition: "background 0.3s",
+      cursor: "pointer",
+      whiteSpace: "nowrap"
+    }}
+    // onMouseOver={(e) => e.currentTarget.style.background = "#128C7E"}
+    // onMouseOut={(e) => e.currentTarget.style.background = "#25D366"}
+  >
+    <a 
+      href="/Login" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "0px",
+        color: "white",
+        textDecoration: "none",
+      }}
+    >
+     WhatsApp
+    </a>
+  </button>
 </Col>
           </Row>
         </Container>

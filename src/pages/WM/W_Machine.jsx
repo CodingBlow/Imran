@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/CommonSection";
-import services from "../pages/HotServices";
-import ACItem from "../pages/ACItems";
+import Helmet from "../../components/Helmet/Helmet";
+import CommonSection from "../../components/UI/CommonSection";
+import services from "../HotServices";
+import ACItem from "../AC/ACItems";
 
 const W_Machine = () => {
   const acServices = services.filter((service) => service.code === 102);

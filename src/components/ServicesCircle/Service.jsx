@@ -30,7 +30,7 @@ const Services = () => {
       name: "Geyser",
       image:
         "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      link: "/geyser-rental",
+      link: "/Geyser",
     },
     {
       name: "Inverter",

@@ -7,13 +7,16 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
-import AcPage from "../pages/AcPage";
+import ACPage from "../pages/AC/AcPage";
 import PrivacyPolicy from "../components/UI/Privacy_Policy";
 import BookingForm from "../components/UI/BookingForm";
 import ServicesList from "../components/UI/ServicesList";
 import ServiceDetails from "../pages/HotServiceDetails";
 import RentalFormPage from "../pages/HotRentalFormPage";
-import W_Machine from "../pages/W_Machine";
+import W_Machine from "../pages/WM/W_Machine";
+import ROPage from "../pages/RO-Purifier/ROPage";
+import RefPage from "../pages/refrigerator/RefrigeratorPage";
+import GeyserPage from "../pages/geyser/GeyserPage";
 const Routers = () => {
   return (
     <Routes>
@@ -25,12 +28,15 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/ac" element={<AcPage />} />
+      <Route path="/ac" element={<ACPage />} />
       <Route path="/washing_machine" element={<W_Machine />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
       <Route path="/BookingForm" element={<BookingForm />} />
       <Route path="/Services" element={<ServicesList />} />
+      <Route path="/RO" element={<ROPage/>}/>
+      <Route path="/refrigerator-rental" element={<RefPage/>}/>
+      <Route path="/Geyser" element={<GeyserPage/>}/>
     </Routes>
   );
 };
