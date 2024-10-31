@@ -5,12 +5,12 @@ import CommonSection from "../components/UI/CommonSection";
 import services from "../pages/HotServices";
 import ACItem from "../pages/ACItems";
 
-const ACPage = () => {
-  const acServices = services.filter((service) => service.code === 100);
+const W_Machine = () => {
+  const acServices = services.filter((service) => service.code === 102);
 
   return (
-    <Helmet title="Air Conditioners">
-      <CommonSection title="Available Air Conditioners" />
+    <Helmet title="Washing Machine">
+      <CommonSection title="Available Washing Machine" />
       <section>
         <Container>
           <Row>
@@ -26,4 +26,4 @@ const ACPage = () => {
   );
 };
 
-export default ACPage;
+export default W_Machine;

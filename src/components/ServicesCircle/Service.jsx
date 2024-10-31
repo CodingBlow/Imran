@@ -8,12 +8,12 @@ const Services = () => {
     {
       name: "AC",
       image: AC,
-      link: "/ac-rental",
+      link: "/ac",
     },
     {
       name: "Washing Machine",
       image: WM,
-      link: "/washing-machine-rental",
+      link: "/washing_machine",
     },
     {
       name: "RO Water Purifier",
