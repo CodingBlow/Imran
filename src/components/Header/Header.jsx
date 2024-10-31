@@ -155,10 +155,10 @@ Haryana, Pin - 122101 */}
       <i className="ri-whatsapp-line"></i> WhatsApp
     </a>
   </button>
-  <button 
-    className="whatsapp_button"
+  {/* <button 
+    className="Login_button"
     style={{
-      backgroundColor:"green",
+      backgroundColor:"Blue",
       border: "none",
       padding: "8px 15px",
       borderRadius: "5px",
@@ -181,9 +181,9 @@ Haryana, Pin - 122101 */}
         textDecoration: "none",
       }}
     >
-     WhatsApp
+     Login
     </a>
-  </button>
+  </button> */}
 </Col>
           </Row>
         </Container>
