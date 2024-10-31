@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import Helmet from "../../components/Helmet/Helmet";
 import CommonSection from "../../components/UI/CommonSection";
 import services from "../HotServices";
-import AllItems from "../AllProducts/AllProductItems"; // Make sure to use PascalCase for component names
+import AllItems from "../AllProducts/AllProductItems"; 
 
 const AllProduct = () => {
   return (
