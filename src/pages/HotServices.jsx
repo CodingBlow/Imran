@@ -176,6 +176,61 @@ const services = [
     },
     price: "1,800/month",
   },
+  // Geyser code=101 
+  {
+    id: 19,
+    name: "Geyser",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 101,
+  },
+  {
+    id: 20,
+    name: "Geyser 2",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 101,
+  },
+  {
+    id: 21,
+    name: "Geyser-3",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 101,
+  },
   //Washing machine = 102
   {
     id: 9,
@@ -341,10 +396,10 @@ const services = [
     price: "₹900/month",
     code: 104,
   },
-  // Geyser code=101 
+  // Inverter code=105 
   {
-    id: 19,
-    name: "Geyser",
+    id: 22,
+    name:"Inverter",
     image:
       "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
@@ -358,11 +413,11 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 101,
+    code: 105,
   },
   {
-    id: 20,
-    name: "Geyser 2",
+    id: 23,
+    name: "Inverter 2",
     image:
       "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
@@ -376,11 +431,11 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 101,
+    code: 105,
   },
   {
-    id: 21,
-    name: "Geyser-3",
+    id: 24,
+    name: "Inverter-3",
     image:
       "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
@@ -394,8 +449,64 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 101,
+    code: 105,
   },
+  // Construction code=106 
+  {
+    id: 25,
+    name:"Construction",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 106,
+  },
+  {
+    id: 26,
+    name: "Construction 2",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 106,
+  },
+  {
+    id: 27,
+    name: "Construction-3",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 106,
+  },
+  
 ];
 
 export default services;

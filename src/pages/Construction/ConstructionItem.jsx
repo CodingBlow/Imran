@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardBody, CardTitle, CardText, Button } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 
-const ROItem = ({ item }) => {
+const ConstructionItem = ({ item }) => {
   const navigate = useNavigate();
 
   const handleViewDetails = () => {
@@ -27,4 +27,4 @@ const ROItem = ({ item }) => {
   );
 };
 
-export default ROItem;
+export default ConstructionItem;

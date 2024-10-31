@@ -10,8 +10,8 @@ const RefPage = () => {
   const acServices = services.filter((service) => service.code === 104);
 
   return (
-    <Helmet title="Air Conditioners">
-      <CommonSection title="Available Air Conditioners" />
+    <Helmet title="Refrigerator">
+      <CommonSection title="Available Refrigerators" />
       <section>
         <Container>
           <Row>

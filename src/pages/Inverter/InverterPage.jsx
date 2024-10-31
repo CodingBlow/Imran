@@ -3,20 +3,20 @@ import { Container, Row, Col } from "reactstrap";
 import Helmet from "../../components/Helmet/Helmet";
 import CommonSection from "../../components/UI/CommonSection";
 import services from "../HotServices";
-import ROItem from "./ROItem";
+import InverterItem from "./InverterItem";
 
-const ROPage = () => {
+const InverterPage = () => {
   const acServices = services.filter((service) => service.code === 103);
 
   return (
-    <Helmet title="RO Water Purifires">
-      <CommonSection title="Available RO Water Purifires" />
+    <Helmet title="Inverters">
+      <CommonSection title="Available Inverters" />
       <section>
         <Container>
           <Row>
             {acServices.map((item) => (
               <Col lg="4" md="6" key={item.code}>
-                <ROItem item={item} />
+                <InverterItem item={item} />
               </Col>
             ))}
           </Row>
@@ -26,4 +26,4 @@ const ROPage = () => {
   );
 };
 
-export default ROPage;
+export default InverterPage;

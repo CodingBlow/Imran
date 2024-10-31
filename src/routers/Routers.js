@@ -17,6 +17,8 @@ import W_Machine from "../pages/WM/W_Machine";
 import ROPage from "../pages/RO-Purifier/ROPage";
 import RefPage from "../pages/refrigerator/RefrigeratorPage";
 import GeyserPage from "../pages/geyser/GeyserPage";
+import InverterPage from "../pages/Inverter/InverterPage";
+import ConstructionPage from "../pages/Construction/ConstructionPage";
 const Routers = () => {
   return (
     <Routes>
@@ -34,9 +36,11 @@ const Routers = () => {
       <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
       <Route path="/BookingForm" element={<BookingForm />} />
       <Route path="/Services" element={<ServicesList />} />
-      <Route path="/RO" element={<ROPage/>}/>
+      <Route path="/ro-water-purifier-rental" element={<ROPage/>}/>
       <Route path="/refrigerator-rental" element={<RefPage/>}/>
       <Route path="/Geyser" element={<GeyserPage/>}/>
+      <Route path="/inverter-rental" element={<InverterPage/>}/>
+      <Route path="/construction-equipment-rental" element={<ConstructionPage/>}/>
     </Routes>
   );
 };
