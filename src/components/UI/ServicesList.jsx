@@ -3,7 +3,6 @@ import { Col, Row, Button } from "reactstrap";
 import "../../styles/services-list.css";
 import servicesData from "../../assets/data/serviceData";
 import { Link } from "react-router-dom";
-import CommonSection from "./CommonSection";
 
 const ServicesList = () => {
   const [showAll, setShowAll] = useState(false);
@@ -13,7 +12,6 @@ const ServicesList = () => {
 
   return (
     <>
-    <CommonSection title="All Services" />
       <Row>
         {displayedServices.map((item) => (
           <ServiceItem item={item} key={item.id} />
