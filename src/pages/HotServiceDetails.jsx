@@ -24,7 +24,7 @@ const ServiceDetails = () => {
 
   const handleRentNow = () => {
     navigate("/rental-form", {
-      state: { service, selectedVariant, selectedDuration }
+      state: { service, selectedVariant, selectedDuration },
     });
   };
 
@@ -50,7 +50,10 @@ const ServiceDetails = () => {
             key={variant}
             onClick={() => setSelectedVariant(variant)}
             style={{
-              border: selectedVariant === variant ? "2px solid #007bff" : "1px solid #ccc",
+              border:
+                selectedVariant === variant
+                  ? "2px solid #007bff"
+                  : "1px solid #ccc",
               borderRadius: "8px",
               padding: "10px",
               cursor: "pointer",
@@ -72,7 +75,10 @@ const ServiceDetails = () => {
             key={duration}
             onClick={() => setSelectedDuration(duration)}
             style={{
-              border: selectedDuration === duration ? "2px solid #007bff" : "1px solid #ccc",
+              border:
+                selectedDuration === duration
+                  ? "2px solid #007bff"
+                  : "1px solid #ccc",
               borderRadius: "8px",
               padding: "10px",
               cursor: "pointer",
@@ -92,7 +98,6 @@ const ServiceDetails = () => {
       </div>
 
       <br />
-     
 
       <button
         onClick={handleRentNow}

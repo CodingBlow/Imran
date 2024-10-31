@@ -19,6 +19,7 @@ import RefPage from "../pages/refrigerator/RefrigeratorPage";
 import GeyserPage from "../pages/geyser/GeyserPage";
 import InverterPage from "../pages/Inverter/InverterPage";
 import ConstructionPage from "../pages/Construction/ConstructionPage";
+import AllProduct from "../pages/AllProducts/AllProducts"
 const Routers = () => {
   return (
     <Routes>
@@ -41,6 +42,7 @@ const Routers = () => {
       <Route path="/Geyser" element={<GeyserPage/>}/>
       <Route path="/inverter-rental" element={<InverterPage/>}/>
       <Route path="/construction-equipment-rental" element={<ConstructionPage/>}/>
+      <Route path="/home/allproducts" element={<AllProduct/>}/>
     </Routes>
   );
 };

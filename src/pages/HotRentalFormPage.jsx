@@ -1,14 +1,80 @@
-// RentalFormPage.js
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const RentalFormPage = () => {
   const location = useLocation();
   const service = location.state?.service;
+  const selectedVariant = location.state?.selectedVariant; // Get the selected variant from state
+  const selectedDuration = location.state?.selectedDuration; // Get the selected duration from state
+
+  const [fullName, setFullName] = useState("");
+  const [whatsappNumber, setWhatsAppNumber] = useState("");
+  const [alternateNumber, setAlternateNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [deliveryAddress, setDeliveryAddress] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false); // To track submission state
+  const [submitSuccess, setSubmitSuccess] = useState(false); // To track submission success
+  const [submitError, setSubmitError] = useState(null); // To track submission error
 
   if (!service) {
     return <p>Service not found</p>;
   }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent the default form submission
+    setIsSubmitting(true); // Set submitting state to true
+    setSubmitSuccess(false); // Reset success state
+    setSubmitError(null); // Reset error state
+
+    // Form data including the service name
+    const formData = {
+      serviceName: service.name, // This sends the service name to the backend
+      selectedVariant,
+      selectedDuration,
+      fullName,
+      whatsappNumber,
+      alternateNumber,
+      email,
+      deliveryAddress,
+      message,
+    };
+
+    try {
+      const response = await fetch(
+        "https://print-hub-cb65e-default-rtdb.firebaseio.com/booking.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Success:", result);
+        setSubmitSuccess(true); // Set success state to true
+        // Optionally reset form fields
+        setFullName("");
+        setWhatsAppNumber("");
+        setAlternateNumber("");
+        setEmail("");
+        setDeliveryAddress("");
+        setMessage("");
+      } else {
+        throw new Error("Submission failed: " + response.statusText);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setSubmitError(
+        "An error occurred while submitting the form. Please try again."
+      ); // Set error state
+    } finally {
+      setIsSubmitting(false); // Reset submitting state
+    }
+  };
 
   return (
     <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
@@ -25,7 +91,21 @@ const RentalFormPage = () => {
       />
       <p>{service.name}</p>
 
-      <form>
+      {/* Display selected variant and duration */}
+      <div style={{ margin: "10px 0" }}>
+        <strong>Selected Variant:</strong> {selectedVariant} <br />
+        <strong>Selected Duration:</strong> {selectedDuration} <br />
+      </div>
+
+      {submitSuccess && (
+        <p style={{ color: "green" }}>Form submitted successfully!</p>
+      )}
+      {submitError && <p style={{ color: "red" }}>{submitError}</p>}
+
+      <form onSubmit={handleSubmit}>
+        <input type="hidden" value={selectedVariant} name="selectedVariant" />
+        <input type="hidden" value={selectedDuration} name="selectedDuration" />
+
         <div style={formGroupStyle}>
           <label>Full Name*</label>
           <input
@@ -33,6 +113,8 @@ const RentalFormPage = () => {
             placeholder="Enter Full Name"
             required
             style={inputStyle}
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
           />
         </div>
         <div style={formGroupStyle}>
@@ -42,6 +124,8 @@ const RentalFormPage = () => {
             placeholder="Enter WhatsApp Number"
             required
             style={inputStyle}
+            value={whatsappNumber}
+            onChange={(e) => setWhatsAppNumber(e.target.value)}
           />
         </div>
         <div style={formGroupStyle}>
@@ -51,6 +135,8 @@ const RentalFormPage = () => {
             placeholder="Enter Alternate Number"
             required
             style={inputStyle}
+            value={alternateNumber}
+            onChange={(e) => setAlternateNumber(e.target.value)}
           />
         </div>
         <div style={formGroupStyle}>
@@ -60,9 +146,11 @@ const RentalFormPage = () => {
             placeholder="Enter Email"
             required
             style={inputStyle}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-       
+
         <div style={formGroupStyle}>
           <label>Delivery Address*</label>
           <input
@@ -70,6 +158,8 @@ const RentalFormPage = () => {
             placeholder="Enter Delivery Address"
             required
             style={inputStyle}
+            value={deliveryAddress}
+            onChange={(e) => setDeliveryAddress(e.target.value)}
           />
         </div>
         <div style={formGroupStyle}>
@@ -77,10 +167,12 @@ const RentalFormPage = () => {
           <textarea
             placeholder="Any additional message"
             style={textareaStyle}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <button type="submit" style={submitButtonStyle}>
-          Submit
+        <button type="submit" style={submitButtonStyle} disabled={isSubmitting}>
+          {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
     </div>
