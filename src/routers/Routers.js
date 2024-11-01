@@ -21,6 +21,7 @@ import InverterPage from "../pages/Inverter/InverterPage";
 import ConstructionPage from "../pages/Construction/ConstructionPage";
 import AllProduct from "../pages/AllProducts/AllProducts"
 import KYCDoc from "../pages/kycDoc";
+import ServicesDesc from "../components/UI/ServicesDesc";
 const Routers = () => {
   return (
     <Routes>
@@ -45,6 +46,7 @@ const Routers = () => {
       <Route path="/construction-equipment-rental" element={<ConstructionPage/>}/>
       <Route path="/home/allproducts" element={<AllProduct/>}/>
       <Route path="/kyc" element={<KYCDoc/>}/>
+      <Route path="/service-Booking" element={<ServicesDesc/>}/>
     </Routes>
   );
 };

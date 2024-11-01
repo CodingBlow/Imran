@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Input, Button, Alert } from "reactstrap";
+import CommonSection from "./CommonSection";
 
 const servicesList = [
   { category: "AC", services: ["AC On Rent", "Service & Repair", "Install & Uninstall", "A.C PCB Repair", "Gas refilling"] },
@@ -67,6 +68,8 @@ const BookingForm = () => {
   };
 
   return (
+    <>
+     <CommonSection title="Booking Form" />
     <Form
       onSubmit={submitHandler}
       style={{ maxWidth: "500px", margin: "auto", padding: "20px", borderRadius: "8px", boxShadow: "0px 0px 15px rgba(0,0,0,0.1)" }}
@@ -192,6 +195,7 @@ const BookingForm = () => {
       {submissionStatus === "success" && <Alert color="success" style={{ marginTop: "15px" }}>Your record saved successfully; our team will call you shortly.</Alert>}
       {submissionStatus === "error" && <Alert color="danger" style={{ marginTop: "15px" }}>Error submitting the booking. Please try again.</Alert>}
     </Form>
+    </>
   );
 };
 

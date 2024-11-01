@@ -6,7 +6,7 @@ import "../../styles/footer.css";
 const quickLinks = [
   { path: "/about", display: "About" },
   { path: "/Privacy_Policy", display: "Privacy Policy" },
-  { path: "/services", display: "Services" },
+  { path: "/service-Booking", display: "Services" },
   // { path: "/blogs", display: "Blog" },
   { path: "/contact", display: "Contact" },
 ];

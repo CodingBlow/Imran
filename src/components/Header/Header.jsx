@@ -13,7 +13,7 @@ const navLinks = [
     display: "About",
   },
   {
-    path: "/Services",
+    path: "/service-Booking",
     display: "Services",
   },
   {

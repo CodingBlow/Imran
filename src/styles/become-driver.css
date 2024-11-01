@@ -1,6 +1,6 @@
 .become__driver {
   background: linear-gradient(rgb(0, 13, 107, 0.9), rgb(0, 13, 107, 0.9)),
-    url("../assets/all-images/drive.jpg");
+    url("../assets/all-images/refrigerator-Repair.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
 
 .become__driver-title {
   font-size: 2.8rem;
-  color: #fff;
+  color: #ffffff;
   line-height: 65px;
 }
 
