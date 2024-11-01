@@ -23,25 +23,25 @@ const Services = () => {
     {
       name: "Refrigerator",
       image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://c.shld.net/rpx/i/s/i/spin/image/spin_prod_606429101?wid=800&hei=800&op_sharpen=1",
       link: "/refrigerator-rental",
     },
     {
       name: "Geyser",
       image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://5.imimg.com/data5/HU/DJ/FB/SELLER-5577939/geyser-ms-35-50l-jpg.jpg",
       link: "/Geyser",
     },
     {
       name: "Inverter",
       image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://rukminim1.flixcart.com/image/1664/1664/inverter/p/y/c/900-va-ups-eb-microtek-original-imae47yfjy8zzhg7.jpeg?q=90",
       link: "/inverter-rental",
     },
     {
       name: "Construction Equipment",
       image:
-        "https://images.pexels.com/photos/5591460/pexels-photo-5591460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://i5.walmartimages.com/asr/1662c8bf-fa28-4550-8d42-e135c305336d.ea59a6c0893ca02e5db79402e16f7e75.jpeg",
       link: "/construction-equipment-rental",
     },
   ];
