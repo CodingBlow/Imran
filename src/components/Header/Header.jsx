@@ -85,7 +85,7 @@ Teekali-Akhlimpur Road,
 City- Badshahpur,
 Haryana, Pin - 122101 */}
 
-            <Col lg="3" md="3" sm="4">
+            {/* <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
                 <span>
                   <i className="ri-time-line"></i>
@@ -95,7 +95,7 @@ Haryana, Pin - 122101 */}
                   <h6>8am - 10pm</h6>
                 </div>
               </div>
-            </Col>
+            </Col> */}
 
             <Col
   lg="2"

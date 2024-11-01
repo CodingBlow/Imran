@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Input, Button, Alert } from "reactstrap";
-import { useNavigate } from "react-router-dom";
 
 const servicesList = [
   { category: "AC", services: ["AC On Rent", "Service & Repair", "Install & Uninstall", "A.C PCB Repair", "Gas refilling"] },
@@ -27,12 +26,15 @@ const BookingForm = () => {
     details: ""
   });
   const [submissionStatus, setSubmissionStatus] = useState(null);
-  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    if (name === "category") setFormData({ ...formData, service: "" });
+    // Clear service if category is changed
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+      ...(name === "category" ? { service: "" } : {})
+    }));
   };
 
   const submitHandler = async (e) => {
@@ -56,7 +58,6 @@ const BookingForm = () => {
           service: "",
           details: ""
         });
-        navigate("/");
       } else {
         setSubmissionStatus("error");
       }
@@ -66,7 +67,10 @@ const BookingForm = () => {
   };
 
   return (
-    <Form onSubmit={submitHandler} style={{ maxWidth: "500px", margin: "auto", padding: "20px", borderRadius: "8px", boxShadow: "0px 0px 15px rgba(0,0,0,0.1)" }}>
+    <Form
+      onSubmit={submitHandler}
+      style={{ maxWidth: "500px", margin: "auto", padding: "20px", borderRadius: "8px", boxShadow: "0px 0px 15px rgba(0,0,0,0.1)" }}
+    >
       <FormGroup style={{ marginBottom: "15px" }}>
         <Label for="firstName" style={{ fontSize: "14px", fontWeight: "bold" }}>First Name</Label>
         <Input
@@ -132,7 +136,7 @@ const BookingForm = () => {
           style={{ borderRadius: "5px", padding: "10px" }}
         />
       </FormGroup>
-      {/* <FormGroup style={{ marginBottom: "15px" }}>
+      <FormGroup style={{ marginBottom: "15px" }}>
         <Label for="categorySelection" style={{ fontSize: "14px", fontWeight: "bold" }}>Select Category</Label>
         <Input
           type="select"
@@ -148,7 +152,7 @@ const BookingForm = () => {
             <option key={index} value={item.category}>{item.category}</option>
           ))}
         </Input>
-      </FormGroup> */}
+      </FormGroup>
       {formData.category && (
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label for="serviceSelection" style={{ fontSize: "14px", fontWeight: "bold" }}>Select Service</Label>
@@ -158,7 +162,7 @@ const BookingForm = () => {
             id="serviceSelection"
             value={formData.service}
             onChange={handleInputChange}
-            required={!!formData.category} // Only required if a category is selected
+            required
             style={{ borderRadius: "5px", padding: "10px" }}
           >
             <option value="">Select a Service</option>
@@ -184,8 +188,8 @@ const BookingForm = () => {
         />
       </FormGroup>
       <Button type="submit" color="primary" style={{ width: "100%", padding: "10px", borderRadius: "5px" }}>Submit</Button>
-      
-      {submissionStatus === "success" && <Alert color="success" style={{ marginTop: "15px" }}>Booking submitted successfully!</Alert>}
+
+      {submissionStatus === "success" && <Alert color="success" style={{ marginTop: "15px" }}>Your record saved successfully; our team will call you shortly.</Alert>}
       {submissionStatus === "error" && <Alert color="danger" style={{ marginTop: "15px" }}>Error submitting the booking. Please try again.</Alert>}
     </Form>
   );
