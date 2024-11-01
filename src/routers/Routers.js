@@ -38,7 +38,7 @@ const Routers = () => {
       <Route path="*" element={<NotFound />} />
       <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
       <Route path="/BookingForm" element={<BookingForm />} />
-      <Route path="/Services" element={<ServicesList />} />
+      {/* <Route path="/Services" element={<ServicesList />} /> */}
       <Route path="/ro-water-purifier-rental" element={<ROPage/>}/>
       <Route path="/refrigerator-rental" element={<RefPage/>}/>
       <Route path="/Geyser" element={<GeyserPage/>}/>
