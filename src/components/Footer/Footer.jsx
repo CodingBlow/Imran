@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 import "../../styles/footer.css";
 
 const quickLinks = [
-  { path: "/about", display: "About" },
-  { path: "/Privacy_Policy", display: "Privacy Policy" },
+  { path: "/about", display: "About Us" },
+  // { path: "/Privacy_Policy", display: "Privacy Policy" },
   { path: "/service-Booking", display: "Services" },
-  // { path: "/blogs", display: "Blog" },
   { path: "/contact", display: "Contact" },
+];
+
+const policies = [
+  { path: "/terms", display: "Terms and Conditions" },
+  { path: "/refunds", display: "Shipping Policy" },
+  { path: "/Return-Pol", display: "Cancellation & Return Policy" },
 ];
 
 const Footer = () => {
@@ -24,8 +29,7 @@ const Footer = () => {
                 <Link to="/home" className="d-flex align-items-center gap-2">
                   <i className="ri-tools-line"></i>
                   <span>
-                  Smart <br /> Eagar Enterprise
-                     {/* Smart Eagar Enterprise */}
+                    Smart <br /> Eagar Enterprise
                   </span>
                 </Link>
               </h1>
@@ -37,7 +41,7 @@ const Footer = () => {
 
           <Col lg="2" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title">Quick Links</h5>
+              <h5 className="footer__link-title">Company</h5>
               <ListGroup>
                 {quickLinks.map((item, index) => (
                   <ListGroupItem key={index} className="p-0 mt-3 quick__link">
@@ -50,31 +54,27 @@ const Footer = () => {
 
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title">Head Office</h5>
-              <p className="office__info">Badshahpur Office
-               Teekali-Akhlimpur Road,
-               City- Badshahpur,
-               Haryana, Pin - 122101</p>
-              <p className="office__info">Phone : +91-9306174774</p>
-              <p className="office__info">Email : Info@smarteagar.com</p>
-              <p className="office__info">Office Time : 08am - 10pm</p>
+              <h5 className="footer__link-title">Policies</h5>
+              <ListGroup>
+                {policies.map((item, index) => (
+                  <ListGroupItem key={index} className="p-0 mt-3 quick__link">
+                    <Link to={item.path}>{item.display}</Link>
+                  </ListGroupItem>
+                ))}
+              </ListGroup>
             </div>
           </Col>
-           {/* Badshahpur Office
-Teekali-Akhlimpur Road,
-City- Badshahpur,
-Haryana, Pin - 122101 */}
 
           <Col lg="3" md="4" sm="12">
             <div className="mb-4">
-              <h5 className="footer__link-title">Newsletter</h5>
-              <p className="section__description">Subscribe to our newsletter</p>
-              <div className="newsletter">
-                <input type="email" placeholder="Email" />
-                <span>
-                  <i className="ri-send-plane-line"></i>
-                </span>
-              </div>
+              <h5 className="footer__link-title">Head Office</h5>
+              <p className="office__info">Badshahpur Office</p>
+              <p className="office__info">
+                Teekali-Akhlimpur Road, City- Badshahpur, Haryana, Pin - 122101
+              </p>
+              <p className="office__info">Phone: +91-9306174774</p>
+              <p className="office__info">Email: Info@smarteagar.com</p>
+              <p className="office__info">Office Time: 08am - 10pm</p>
             </div>
           </Col>
 

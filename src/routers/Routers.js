@@ -19,9 +19,12 @@ import RefPage from "../pages/refrigerator/RefrigeratorPage";
 import GeyserPage from "../pages/geyser/GeyserPage";
 import InverterPage from "../pages/Inverter/InverterPage";
 import ConstructionPage from "../pages/Construction/ConstructionPage";
-import AllProduct from "../pages/AllProducts/AllProducts"
+import AllProduct from "../pages/AllProducts/AllProducts";
 import KYCDoc from "../pages/kycDoc";
 import ServicesDesc from "../components/UI/ServicesDesc";
+import Termsandcondition from "../components/Policies/T&Cpolicy"
+import ShippingPolicy from "../components/Policies/ShippingPolicy";
+import CancelRefPol from "../components/Policies/Cancel&RefPol";
 const Routers = () => {
   return (
     <Routes>
@@ -47,6 +50,9 @@ const Routers = () => {
       <Route path="/home/allproducts" element={<AllProduct/>}/>
       <Route path="/kyc" element={<KYCDoc/>}/>
       <Route path="/service-Booking" element={<ServicesDesc/>}/>
+      <Route path="/terms" element={<Termsandcondition/>}/>
+      <Route path="/Return-Pol" element={<CancelRefPol/>}/>
+      <Route path="/refunds" element={<ShippingPolicy/>}/>
     </Routes>
   );
 };

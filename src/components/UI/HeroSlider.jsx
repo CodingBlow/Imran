@@ -25,7 +25,7 @@ const HeroSlider = () => {
             {/* <h4 className="text-light mb-3">Rent an AC for Just $50/Da</h4> */}
             <h1 className="text-light mb-4">Stay Cool with Our AC Rentals!</h1>
             <button className="btn reserve__btn mt-4">
-              <Link to="#">Rent Now</Link>
+              <Link to="/home/allproducts">Rent Now</Link>
             </button>
           </div>
         </Container>
@@ -37,7 +37,7 @@ const HeroSlider = () => {
             {/* <h4 className="text-light mb-3">Washing Machine Rental at $30/Day</h4> */}
             <h1 className="text-light mb-4">Make Your LED Repair Easy!</h1>
             <button className="btn reserve__btn mt-4">
-              <Link to="#">Rent Now</Link>
+              <Link to="home/allproducts">Rent Now</Link>
             </button>
           </div>
         </Container>
@@ -49,7 +49,7 @@ const HeroSlider = () => {
             {/* <h4 className="text-light mb-3">RO Water Purifier for $20/Day</h4> */}
             <h1 className="text-light mb-4">Ensure Safe Drinking Water!</h1>
             <button className="btn reserve__btn mt-4">
-              <Link to="#">Rent Now</Link>
+              <Link to="home/allproducts">Rent Now</Link>
             </button>
           </div>
         </Container>
@@ -60,7 +60,7 @@ const HeroSlider = () => {
             {/* <h4 className="text-light mb-3">RO Water Purifier for $20/Day</h4> */}
             <h1 className="text-light mb-4">Reliable Refrigerator Repairs – Keep It Cool!</h1>
             <button className="btn reserve__btn mt-4">
-              <Link to="/refrigerator-rental">Rent Now</Link>
+              <Link to="/home/allproducts">Rent Now</Link>
               
             </button>
           </div>
