@@ -58,7 +58,7 @@ const FindRental = () => {
       <div style={formInputsContainerStyle}>
         <FormGroup style={formGroupStyle}>
           <label htmlFor="delivery-location" style={labelStyle}>
-            Select Delivery Location
+            Select Available Location
           </label>
           <select
             id="delivery-location"
@@ -68,7 +68,7 @@ const FindRental = () => {
             aria-label="Select Delivery Location"
           >
             <option value="" disabled>
-              Choose a location...
+              Check your location 
             </option>
             {locations.map((location, index) => (
               <option key={index} value={location}>
