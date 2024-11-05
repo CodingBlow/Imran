@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 
 import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
-import Season_card from "pages/Season_Homepage";
+import Season_card from "/pages/Season_Homepage";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 
