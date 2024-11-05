@@ -42,7 +42,6 @@ const Header = () => {
                 <span>Need Help?</span>
                 <span className="header__top__help">
                   <i className="ri-phone-fill"></i> +91-9306174774
-
                 </span>
               </div>
             </Col>
@@ -60,13 +59,13 @@ const Header = () => {
                   <Link to="/home" className="d-flex align-items-center gap-2">
                     <i className="ri-tools-line"></i>
                     <span>
-                    Smart <br /> Eagar Enterprise
+                      Smart <br /> Eager Enterprise
                     </span>
                   </Link>
                 </h1>
               </div>
             </Col>
-            {/* Smart Eagar Enterprise */}
+            {/* Smart Eager Enterprise */}
 
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
@@ -98,69 +97,67 @@ Haryana, Pin - 122101 */}
             </Col>
 
             <Col
-  lg="2"
-  md="3"
-  sm="0"
-  className="d-flex align-items-center justify-content-end"
-  style={{ 
-    gap: "20px"
+              lg="2"
+              md="3"
+              sm="0"
+              className="d-flex align-items-center justify-content-end"
+              style={{
+                gap: "20px",
+              }}
+            >
+              <button
+                className="header__btn btn"
+                style={{
+                  whiteSpace: "nowrap",
+                  padding: "8px 15px",
+                  border: "none",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                }}
+              >
+                <a
+                  href="tel:+919306174774"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                    textDecoration: "none",
+                  }}
+                >
+                  <i className="ri-phone-line"></i> Request a call
+                </a>
+              </button>
 
-   }}
->
-  <button 
-    className="header__btn btn"
-    style={{
-      whiteSpace: "nowrap",
-      padding: "8px 15px",
-      border: "none",
-      borderRadius: "5px",
-      cursor: "pointer"
-    }}
-  >
-    <a 
-  href="tel:+919306174774" 
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "5px",
-    textDecoration: "none"
-  }}
->
-  <i className="ri-phone-line"></i> Request a call
-</a>
-
-  </button>
-
-  <button 
-    className="whatsapp_button"
-    style={{
-      backgroundColor:"green",
-      border: "none",
-      padding: "8px 15px",
-      borderRadius: "5px",
-      transition: "background 0.3s",
-      cursor: "pointer",
-      whiteSpace: "nowrap"
-    }}
-    // onMouseOver={(e) => e.currentTarget.style.background = "#128C7E"}
-    // onMouseOut={(e) => e.currentTarget.style.background = "#25D366"}
-  >
-    <a 
-      href="https://wa.me/919306186668" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "0px",
-        color: "white",
-        textDecoration: "none",
-      }}
-    >
-      <i className="ri-whatsapp-line"></i> WhatsApp
-    </a>
-  </button>
-  {/* <button 
+              <button
+                className="whatsapp_button"
+                style={{
+                  backgroundColor: "green",
+                  border: "none",
+                  padding: "8px 15px",
+                  borderRadius: "5px",
+                  transition: "background 0.3s",
+                  cursor: "pointer",
+                  whiteSpace: "nowrap",
+                }}
+                // onMouseOver={(e) => e.currentTarget.style.background = "#128C7E"}
+                // onMouseOut={(e) => e.currentTarget.style.background = "#25D366"}
+              >
+                <a
+                  href="https://wa.me/919306186668"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0px",
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  <i className="ri-whatsapp-line"></i> WhatsApp
+                </a>
+              </button>
+              {/* <button 
     className="Login_button"
     style={{
       backgroundColor:"Blue",
@@ -189,7 +186,7 @@ Haryana, Pin - 122101 */}
      Login
     </a>
   </button> */}
-</Col>
+            </Col>
           </Row>
         </Container>
       </div>

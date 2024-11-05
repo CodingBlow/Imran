@@ -29,15 +29,27 @@ const About = () => {
             <Col lg="6" md="6" sm="12">
               <div className="about__page-content">
                 <h2 className="section__title">
-                Your Trusted Partner for Affordable Rental Solutions
+                  Your Trusted Partner for Affordable Rental Solutions
                 </h2>
 
                 <p className="section__description">
-                At <b>Smart Eagar Enterprise</b>, we offer a wide range of affordable, high-quality rental solutions tailored to make your life easier. From essential home appliances like ACs, refrigerators, and washing machines to seasonal items like room heaters and geysers, we ensure comfort and convenience for every season.
+                  At <b>Smart Eager Enterprise</b>, we offer a wide range of
+                  affordable, high-quality rental solutions tailored to make
+                  your life easier. From essential home appliances like ACs,
+                  refrigerators, and washing machines to seasonal items like
+                  room heaters and geysers, we ensure comfort and convenience
+                  for every season.
                 </p>
 
                 <p className="section__description">
-                Need a reliable RO water purifier for clean drinking water or a TV for entertainment? We’ve got you covered! Additionally, our inverter rentals keep you powered during outages, while construction equipment and stabilizer rentals support your project needs. For added convenience, we also provide professional electrician and plumber services. With us, renting is simple, cost-effective, and worry-free—perfect for any situation.
+                  Need a reliable RO water purifier for clean drinking water or
+                  a TV for entertainment? We’ve got you covered! Additionally,
+                  our inverter rentals keep you powered during outages, while
+                  construction equipment and stabilizer rentals support your
+                  project needs. For added convenience, we also provide
+                  professional electrician and plumber services. With us,
+                  renting is simple, cost-effective, and worry-free—perfect for
+                  any situation.
                 </p>
 
                 <div className=" d-flex align-items-center gap-3 mt-4">

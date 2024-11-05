@@ -35,7 +35,10 @@ const Footer = () => {
               </h1>
             </div>
             <p className="footer__logo-content">
-              We provide top-quality rental services, covering a wide range of essential appliances and equipment—from ACs and refrigerators to construction tools and water purifiers. Our commitment is to make reliable, high-quality rentals accessible and convenient.
+              We provide top-quality rental services, covering a wide range of
+              essential appliances and equipment—from ACs and refrigerators to
+              construction tools and water purifiers. Our commitment is to make
+              reliable, high-quality rentals accessible and convenient.
             </p>
           </Col>
 
@@ -73,7 +76,7 @@ const Footer = () => {
                 Teekali-Akhlimpur Road, City- Badshahpur, Haryana, Pin - 122101
               </p>
               <p className="office__info">Phone: +91-9306174774</p>
-              <p className="office__info">Email: Info@smarteagar.com</p>
+              <p className="office__info">Email: Info@smartEager.com</p>
               <p className="office__info">Office Time: 08am - 10pm</p>
             </div>
           </Col>
@@ -81,8 +84,17 @@ const Footer = () => {
           <Col lg="12">
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
-                <i className="ri-copyright-line"></i>Copyright {year}, Developed by 
-                <a href="https://www.zuridox.com" target="_blank" rel="noopener noreferrer"> Zuridox</a>. All rights reserved.
+                <i className="ri-copyright-line"></i>Copyright {year}, Developed
+                by
+                <a
+                  href="https://www.zuridox.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Zuridox
+                </a>
+                . All rights reserved.
               </p>
             </div>
           </Col>

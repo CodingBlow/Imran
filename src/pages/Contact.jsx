@@ -95,8 +95,18 @@ const Contact = () => {
               )}
               {submitError && <p style={{ color: "red" }}>{submitError}</p>}
 
-              <Form onSubmit={handleSubmit} style={{ padding: "20px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", borderRadius: "8px" }}>
-                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
+              <Form
+                onSubmit={handleSubmit}
+                style={{
+                  padding: "20px",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  borderRadius: "8px",
+                }}
+              >
+                <FormGroup
+                  className="contact__form"
+                  style={{ marginBottom: "15px" }}
+                >
                   <Input
                     name="name"
                     placeholder="Your Name"
@@ -104,10 +114,17 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    style={{ padding: "10px", borderRadius: "5px", fontSize: "15px" }}
+                    style={{
+                      padding: "10px",
+                      borderRadius: "5px",
+                      fontSize: "15px",
+                    }}
                   />
                 </FormGroup>
-                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
+                <FormGroup
+                  className="contact__form"
+                  style={{ marginBottom: "15px" }}
+                >
                   <Input
                     name="email"
                     placeholder="Email"
@@ -115,10 +132,17 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    style={{ padding: "10px", borderRadius: "5px", fontSize: "15px" }}
+                    style={{
+                      padding: "10px",
+                      borderRadius: "5px",
+                      fontSize: "15px",
+                    }}
                   />
                 </FormGroup>
-                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
+                <FormGroup
+                  className="contact__form"
+                  style={{ marginBottom: "15px" }}
+                >
                   <Input
                     name="mobile"
                     placeholder="Mobile Number"
@@ -127,10 +151,17 @@ const Contact = () => {
                     value={formData.mobile}
                     onChange={handleChange}
                     required
-                    style={{ padding: "10px", borderRadius: "5px", fontSize: "15px" }}
+                    style={{
+                      padding: "10px",
+                      borderRadius: "5px",
+                      fontSize: "15px",
+                    }}
                   />
                 </FormGroup>
-                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
+                <FormGroup
+                  className="contact__form"
+                  style={{ marginBottom: "15px" }}
+                >
                   <textarea
                     name="message"
                     rows="5"
@@ -146,7 +177,7 @@ const Contact = () => {
                       width: "100%",
                       borderColor: "#ccc",
                       resize: "vertical",
-                      minHeight: "100px"
+                      minHeight: "100px",
                     }}
                   ></textarea>
                 </FormGroup>
@@ -164,10 +195,14 @@ const Contact = () => {
                     fontSize: "16px",
                     cursor: "pointer",
                     fontWeight: "bold",
-                    transition: "background-color 0.3s"
+                    transition: "background-color 0.3s",
                   }}
-                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0056b3")}
-                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#007bff")}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#0056b3")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#007bff")
+                  }
                 >
                   Send Message
                 </button>
@@ -189,7 +224,7 @@ const Contact = () => {
                 <div className="d-flex align-items-center gap-2">
                   <h6 className="mb-0 fs-6">Email:</h6>
                   <p className="section__description mb-0">
-                    Info@smarteagar.com
+                    Info@smartEager.com
                   </p>
                 </div>
 
