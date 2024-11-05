@@ -1,5 +1,5 @@
 .header__top {
-  padding: 10px 0px;
+  padding: 10px 0;
   background: #000d6b;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 /* ============ header middle style =========== */
 
 .header__middle {
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .logo h1 a span {
@@ -78,14 +78,15 @@
 }
 
 .header__btn {
-  background:#000d6b !important;
+  background: #000d6b !important;
   padding: 10px 20px;
   border: none;
   outline: none;
   border-radius: 5px;
 }
-.whatsapp_button{
-  background:  #25d366 !important;
+
+.whatsapp_button {
+  background: #25d366 !important;
 }
 
 .header__btn a {
@@ -105,7 +106,7 @@
 /* ================ main navbar styles =========== */
 
 .main__navbar {
-  padding: 15px 0px;
+  padding: 15px 0;
   background: #000d6b;
 }
 
@@ -155,6 +156,7 @@
 .search__box input::placeholder {
   font-size: 0.8rem;
 }
+
 .search__box span i {
   color: rgba(255, 255, 255, 0.555);
   cursor: pointer;
@@ -176,7 +178,7 @@
   }
 
   .navigation {
-    background: rgb(0, 13, 107, 0.6);
+    background: rgba(0, 13, 107, 0.9);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -191,20 +193,33 @@
     height: 100%;
     background: #fff;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Change to flex-start for better spacing */
     flex-direction: column;
     row-gap: 2rem;
     justify-content: center;
+    padding: 20px 0; /* Add padding for better spacing */
   }
 
   .menu a {
     color: #000d6b;
     font-weight: 600;
     font-size: 0.9rem;
+    padding: 10px; /* Add padding to menu items */
+    width: 100%; /* Make links full width */
+    text-align: center; /* Center align text */
   }
 
   .menu__active {
     display: block;
   }
-}
 
+  .search__box {
+    width: 90%; /* Adjust width for mobile */
+    margin: 10px auto; /* Center the search box */
+  }
+
+  .header__btn {
+    width: 90%; /* Make button full width */
+    margin: 10px auto; /* Center the button */
+  }
+}

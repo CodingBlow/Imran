@@ -1,10 +1,14 @@
+.hero__slider {
+  overflow: hidden;
+}
+
 .slider__item {
   max-width: 100%;
-  height: 650px;
+  height: 60vh; 
 }
 
 .slider__item-01 {
-  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+  background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
     url("https://images.pexels.com/photos/7347538/pexels-photo-7347538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +16,7 @@
 }
 
 .slider__item-02 {
-  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+  background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
     url("../assets/all-images/tv-repair-slide.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -20,31 +24,36 @@
 }
 
 .slider__item-03 {
-  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+  background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
     url("https://res.cloudinary.com/urbanclap/image/upload/images/supply/customer-app-supply/1687327309842-5c0a9e.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .slider__item-04 {
-  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+  background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
     url("../assets/all-images/refrigerator-Repair.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero__slider {
-  overflow: hidden;
-}
-
 .slider__content {
-  padding-top: 150px;
+  padding-top: 150px; /* Ensure content is vertically positioned correctly */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure full-height slider item content */
+  text-align: center;
 }
 
 .slider__content h1 {
   font-size: 3.2rem;
   font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .reserve__btn {
@@ -52,11 +61,14 @@
   color: #000d6b !important;
   border: none;
   outline: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .reserve__btn a {
   text-decoration: none;
-  font-weight: 600;
   color: #000d6b;
 }
 
@@ -67,8 +79,7 @@
 
 @media only screen and (max-width: 992px) {
   .slider__item {
-    height: 530px;
-    max-width: 100vw;
+    height: 530px; /* Reduced height for tablets */
   }
 
   .slider__content {
@@ -76,16 +87,20 @@
   }
 
   .slider__content h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Smaller heading for tablets */
   }
 }
 
 @media only screen and (max-width: 768px) {
   .slider__item {
-    height: 450px;
+    height: 450px; /* Reduced height for smaller screens */
+  }
+
+  .slider__content {
+    margin-top: 0;
   }
 
   .slider__content h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller heading for mobile */
   }
 }

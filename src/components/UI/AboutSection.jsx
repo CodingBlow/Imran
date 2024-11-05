@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import "../../styles/about-section.css";
-import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
 
 const AboutSection = ({ aboutClass }) => {
   const services = [
@@ -19,7 +18,6 @@ const AboutSection = ({ aboutClass }) => {
 
   const [showAll, setShowAll] = useState(false);
 
-  // Display first 6 items initially (2 rows with 3 items per row) and all items if showAll is true
   const displayedServices = showAll ? services : services.slice(0, 6);
 
   return (
@@ -67,9 +65,9 @@ const AboutSection = ({ aboutClass }) => {
       {/* Inline CSS */}
       <style jsx>{`
         .about__section {
-          margin-top: 280px;
+          margin-top: 0; /* Adjusted to remove excessive margin */
         }
-        
+
         .about__section--aboutPage {
           margin-top: 0;
         }

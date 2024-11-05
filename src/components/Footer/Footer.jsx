@@ -94,7 +94,7 @@ const Footer = () => {
                   {" "}
                   Zuridox
                 </a>
-                . All rights reserved.
+                . All rights reserved Smart Eager Enterprise
               </p>
             </div>
           </Col>

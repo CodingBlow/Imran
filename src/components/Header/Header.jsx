@@ -86,13 +86,14 @@ Haryana, Pin - 122101 */}
 
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
-                <span>
+                {/* <span>
                   <i className="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
                   <h4>All Day</h4>
                   <h6>8am - 10pm</h6>
-                </div>
+                </div> */}
+
               </div>
             </Col>
 
@@ -139,8 +140,6 @@ Haryana, Pin - 122101 */}
                   cursor: "pointer",
                   whiteSpace: "nowrap",
                 }}
-                // onMouseOver={(e) => e.currentTarget.style.background = "#128C7E"}
-                // onMouseOut={(e) => e.currentTarget.style.background = "#25D366"}
               >
                 <a
                   href="https://wa.me/919306186668"
@@ -157,35 +156,7 @@ Haryana, Pin - 122101 */}
                   <i className="ri-whatsapp-line"></i> WhatsApp
                 </a>
               </button>
-              {/* <button 
-    className="Login_button"
-    style={{
-      backgroundColor:"Blue",
-      border: "none",
-      padding: "8px 15px",
-      borderRadius: "5px",
-      transition: "background 0.3s",
-      cursor: "pointer",
-      whiteSpace: "nowrap"
-    }}
-    // onMouseOver={(e) => e.currentTarget.style.background = "#128C7E"}
-    // onMouseOut={(e) => e.currentTarget.style.background = "#25D366"}
-  >
-    <a 
-      href="/Login" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "0px",
-        color: "white",
-        textDecoration: "none",
-      }}
-    >
-     Login
-    </a>
-  </button> */}
+            
             </Col>
           </Row>
         </Container>

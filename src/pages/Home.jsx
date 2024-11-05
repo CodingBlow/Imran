@@ -7,11 +7,11 @@ import { Container, Row, Col } from "reactstrap";
 
 import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
-import Season_card from "/pages/Season_Homepage";
+import Season_card from "./Season_Homepage";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 
-import BlogList from "../components/UI/BlogList";
+
 import GoogleMap from "../components/GoogleMap/GoogleMap";
 import FindRental from "../components/UI/FindRental";
 import HotOffers from "../components/HotOffer/HotOffer";
@@ -20,28 +20,16 @@ const Home = () => {
   return (
     <Helmet title="Home">
       {/* ============= hero section =========== */}
-      <section className="p-0 hero__slider-section">
+      
         <HeroSlider />
 
-        <div className="hero__form">
-          <Container>
-            <Row className="form__row">
-              <Col lg="4" md="4">
-                <div className="find__cars-left">
-                  <h2>Find Your Best Rental Service In Gurgaon</h2>
-                </div>
-              </Col>
-
-              <Col lg="8" md="8" sm="12">
-                <FindRental />
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </section>
-      <Season_card/>
+       
+        <Season_card/>
+        
+      
+      
       {/* =========== about section ================ */}
-      <AboutSection />
+      {/* <AboutSection /> */}
       {/* ========== services section ============ */}
 
       {/* Choose your rental services */}
