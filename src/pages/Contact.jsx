@@ -29,6 +29,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    mobile: "",
     message: "",
   });
 
@@ -45,16 +46,16 @@ const Contact = () => {
     setSubmitSuccess(false);
     setSubmitError(null);
 
-    // Prepare the payload for submission
     const payload = {
       name: formData.name,
       email: formData.email,
+      mobile: formData.mobile,
       message: formData.message,
     };
 
     try {
       const response = await fetch(
-        "https://print-hub-cb65e-default-rtdb.firebaseio.com/contact.json", // Replace with your actual endpoint
+        "https://print-hub-cb65e-default-rtdb.firebaseio.com/contact.json",
         {
           method: "POST",
           headers: {
@@ -68,7 +69,7 @@ const Contact = () => {
         const result = await response.json();
         console.log("Success:", result);
         setSubmitSuccess(true);
-        setFormData({ name: "", email: "", message: "" }); // Reset form
+        setFormData({ name: "", email: "", mobile: "", message: "" });
       } else {
         throw new Error("Submission failed: " + response.statusText);
       }
@@ -94,8 +95,8 @@ const Contact = () => {
               )}
               {submitError && <p style={{ color: "red" }}>{submitError}</p>}
 
-              <Form onSubmit={handleSubmit}>
-                <FormGroup className="contact__form">
+              <Form onSubmit={handleSubmit} style={{ padding: "20px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", borderRadius: "8px" }}>
+                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
                   <Input
                     name="name"
                     placeholder="Your Name"
@@ -103,9 +104,10 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    style={{ padding: "10px", borderRadius: "5px", fontSize: "15px" }}
                   />
                 </FormGroup>
-                <FormGroup className="contact__form">
+                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
                   <Input
                     name="email"
                     placeholder="Email"
@@ -113,9 +115,22 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    style={{ padding: "10px", borderRadius: "5px", fontSize: "15px" }}
                   />
                 </FormGroup>
-                <FormGroup className="contact__form">
+                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
+                  <Input
+                    name="mobile"
+                    placeholder="Mobile Number"
+                    type="tel"
+                    pattern="[0-9]{10}"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    required
+                    style={{ padding: "10px", borderRadius: "5px", fontSize: "15px" }}
+                  />
+                </FormGroup>
+                <FormGroup className="contact__form" style={{ marginBottom: "15px" }}>
                   <textarea
                     name="message"
                     rows="5"
@@ -124,17 +139,43 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    style={{
+                      padding: "10px",
+                      borderRadius: "5px",
+                      fontSize: "15px",
+                      width: "100%",
+                      borderColor: "#ccc",
+                      resize: "vertical",
+                      minHeight: "100px"
+                    }}
                   ></textarea>
                 </FormGroup>
 
-                <button className="contact__btn" type="submit">
+                <button
+                  className="contact__btn"
+                  type="submit"
+                  style={{
+                    width: "100%",
+                    padding: "12px",
+                    backgroundColor: "#007bff",
+                    color: "#fff",
+                    border: "none",
+                    borderRadius: "5px",
+                    fontSize: "16px",
+                    cursor: "pointer",
+                    fontWeight: "bold",
+                    transition: "background-color 0.3s"
+                  }}
+                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0056b3")}
+                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#007bff")}
+                >
                   Send Message
                 </button>
               </Form>
             </Col>
 
             <Col lg="5" md="5">
-              <div className="contact__info">
+              <div className="contact__info" style={{ paddingLeft: "20px" }}>
                 <h6 className="fw-bold">Contact Information</h6>
                 <p className="section__description mb-0">
                   Badshahpur Office Teekali-Akhlimpur Road, <br />
@@ -160,6 +201,7 @@ const Contact = () => {
                       to={item.url}
                       key={index}
                       className="social__link-icon"
+                      style={{ fontSize: "20px", color: "#007bff" }}
                     >
                       <i className={item.icon}></i>
                     </Link>

@@ -13,16 +13,16 @@ const navLinks = [
     display: "About",
   },
   {
-    path: "/Services",
-    display: "Services",
+    path: "/",
+    display: "Rental Services",
+  },
+  {
+    path: "/BookingForm",
+    display: "Service maintenance",
   },
   {
     path: "/home/allproducts",
     display: "All Products",
-  },
-  {
-    path: "/contact",
-    display: "Contact",
   },
 ];
 
@@ -117,17 +117,18 @@ Haryana, Pin - 122101 */}
       cursor: "pointer"
     }}
   >
-    <Link 
-      to="/contact"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "5px",
-        textDecoration: "none"
-      }}
-    >
-      <i className="ri-phone-line"></i> Request a call
-    </Link>
+    <a 
+  href="tel:+919306174774" 
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "5px",
+    textDecoration: "none"
+  }}
+>
+  <i className="ri-phone-line"></i> Request a call
+</a>
+
   </button>
 
   <button 

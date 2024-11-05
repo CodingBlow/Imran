@@ -19,7 +19,12 @@ import RefPage from "../pages/refrigerator/RefrigeratorPage";
 import GeyserPage from "../pages/geyser/GeyserPage";
 import InverterPage from "../pages/Inverter/InverterPage";
 import ConstructionPage from "../pages/Construction/ConstructionPage";
-import AllProduct from "../pages/AllProducts/AllProducts"
+import AllProduct from "../pages/AllProducts/AllProducts";
+import KYCDoc from "../pages/kycDoc";
+import ServicesDesc from "../components/UI/ServicesDesc";
+import Termsandcondition from "../components/Policies/T&Cpolicy"
+import ShippingPolicy from "../components/Policies/ShippingPolicy";
+import CancelRefPol from "../components/Policies/Cancel&RefPol";
 const Routers = () => {
   return (
     <Routes>
@@ -34,15 +39,20 @@ const Routers = () => {
       <Route path="/ac" element={<ACPage />} />
       <Route path="/washing_machine" element={<W_Machine />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/Privacy_Policy" element={<PrivacyPolicy />} />
+      {/* <Route path="/Privacy_Policy" element={<PrivacyPolicy />} /> */}
       <Route path="/BookingForm" element={<BookingForm />} />
-      <Route path="/Services" element={<ServicesList />} />
+      {/* <Route path="/Services" element={<ServicesList />} /> */}
       <Route path="/ro-water-purifier-rental" element={<ROPage/>}/>
       <Route path="/refrigerator-rental" element={<RefPage/>}/>
       <Route path="/Geyser" element={<GeyserPage/>}/>
       <Route path="/inverter-rental" element={<InverterPage/>}/>
       <Route path="/construction-equipment-rental" element={<ConstructionPage/>}/>
       <Route path="/home/allproducts" element={<AllProduct/>}/>
+      <Route path="/kyc" element={<KYCDoc/>}/>
+      <Route path="/service-Booking" element={<ServicesDesc/>}/>
+      <Route path="/terms" element={<Termsandcondition/>}/>
+      <Route path="/Return-Pol" element={<CancelRefPol/>}/>
+      <Route path="/refunds" element={<ShippingPolicy/>}/>
     </Routes>
   );
 };
