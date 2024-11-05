@@ -29,7 +29,7 @@ const Footer = () => {
                 <Link to="/home" className="d-flex align-items-center gap-2">
                   <i className="ri-tools-line"></i>
                   <span>
-                    Smart <br /> Eagar Enterprise
+                    Smart <br /> Eager Enterprise
                   </span>
                 </Link>
               </h1>

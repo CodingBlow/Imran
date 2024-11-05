@@ -13,16 +13,16 @@ const navLinks = [
     display: "About",
   },
   {
-    path: "/service-Booking",
-    display: "Services",
+    path: "/",
+    display: "Rental Services",
+  },
+  {
+    path: "/BookingForm",
+    display: "Service maintenance",
   },
   {
     path: "/home/allproducts",
     display: "All Products",
-  },
-  {
-    path: "/contact",
-    display: "Contact",
   },
 ];
 
