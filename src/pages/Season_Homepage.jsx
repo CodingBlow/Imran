@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
   return (
@@ -17,7 +17,8 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
             <div style={styles.icon}>☀️</div>
             <h2 style={styles.cardTitle}>Summer Rentals</h2>
             <p style={styles.cardText}>
-              Choose from a range of cooling solutions, ACs, and summer-friendly appliances to keep you comfortable.
+              Choose from a range of cooling solutions, ACs, and summer-friendly
+              appliances to keep you comfortable.
             </p>
             <div style={styles.action}>
               <span>View Equipment</span> →
@@ -34,7 +35,8 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
             <div style={styles.icon}>❄️</div>
             <h2 style={styles.cardTitle}>Winter Rentals</h2>
             <p style={styles.cardText}>
-              Discover heaters, geysers, and other winter essentials for a warm and cozy season.
+              Discover heaters, geysers, and other winter essentials for a warm
+              and cozy season.
             </p>
             <div style={styles.action}>
               <span>View Equipment</span> →
@@ -49,90 +51,90 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
 // Styles as a JavaScript object
 const styles = {
   container: {
-    minHeight: '60vh',
-    backgroundColor: '#f7fafc',
-    padding: '2rem 2rem',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+    minHeight: "30vh",
+    backgroundColor: "#f7fafc",
+    padding: "2rem 2rem",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
   title: {
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
-    color: '#1a202c',
-    marginBottom: '1.5rem', // Reduced margin-bottom for less vertical space
-    textAlign: 'center',
+    fontSize: "2.5rem",
+    fontWeight: "bold",
+    color: "#1a202c",
+    marginBottom: "1.5rem", // Reduced margin-bottom for less vertical space
+    textAlign: "center",
   },
   cardContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '1.5rem',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    marginTop: '1rem', // Reduced margin-top for less vertical space
-    marginBottom: '1rem', // Reduced margin-bottom for less vertical space
+    display: "flex",
+    flexDirection: "row",
+    gap: "1.5rem",
+    justifyContent: "center",
+    flexWrap: "wrap",
   },
   card: {
-    width: '260px',
-    padding: '1rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
-    textAlign: 'center',
-    cursor: 'pointer',
-    transition: 'transform 0.3s, box-shadow 0.3s',
+    width: "260px",
+    padding: "1rem",
+    borderRadius: "8px",
+    boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
+    textAlign: "center",
+    cursor: "pointer",
+    transition: "transform 0.3s, box-shadow 0.3s",
   },
   summerCard: {
-    backgroundColor: '#3b82f6',
-    color: '#ffffff',
+    backgroundColor: "#3b82f6",
+    color: "#ffffff",
   },
   winterCard: {
-    backgroundColor: '#10b981',
-    color: '#ffffff',
+    backgroundColor: "#10b981",
+    color: "#ffffff",
   },
   icon: {
-    fontSize: '2.5rem',
-    marginBottom: '0.5rem',
+    fontSize: "2.5rem",
+    marginBottom: "0.5rem",
   },
   cardTitle: {
-    fontSize: '1.25rem',
-    fontWeight: 'bold',
-    marginBottom: '0.5rem',
+    fontSize: "1.25rem",
+    fontWeight: "bold",
+    marginBottom: "0.5rem",
   },
   cardText: {
-    fontSize: '0.9rem',
-    color: '#e2e8f0',
-    marginBottom: '0.5rem',
+    fontSize: "0.9rem",
+    color: "#e2e8f0",
+    marginBottom: "0.5rem",
   },
   action: {
-    fontSize: '1rem',
-    fontWeight: 'bold',
-    color: '#ffffff',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    fontSize: "1rem",
+    fontWeight: "bold",
+    color: "#ffffff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   link: {
-    textDecoration: 'none',
+    textDecoration: "none",
   },
   // Media query for responsiveness
-  '@media (max-width: 768px)': {
+  "@media (max-width: 768px)": {
     container: {
-      padding: '1rem', // Reduced padding on smaller screens
+      padding: "1rem", // Reduced padding on smaller screens
+      marginTop: "0.5rem", // Reduced top margin
+      marginBottom: "0.5rem", // Reduced bottom margin
     },
     title: {
-      fontSize: '2rem',
-      marginBottom: '1rem', // Further reduced margin-bottom
+      fontSize: "2rem",
+      marginBottom: "1rem", // Further reduced margin-bottom
     },
     card: {
-      width: '100%',
-      padding: '0.8rem', // Reduced padding inside the cards
+      width: "100%",
+      padding: "0.8rem", // Reduced padding inside the cards
     },
     cardContainer: {
-      flexDirection: 'column',
-      gap: '1rem', // Adjusted gap between cards
-      marginTop: '0.5rem', // Further reduced vertical spacing
-      marginBottom: '0.5rem', // Further reduced vertical spacing
+      flexDirection: "column",
+      gap: "1rem", // Adjusted gap between cards
+      marginTop: "0.5rem", // Further reduced vertical spacing
+      marginBottom: "0.5rem", // Further reduced vertical spacing
     },
   },
 };

@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "../../styles/header.css";
 
 const navLinks = [
@@ -27,9 +27,21 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const [searchQuery, setSearchQuery] = useState(""); // state to store search query
   const menuRef = useRef(null);
+  const navigate = useNavigate(); // To navigate after search
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
+  // Handle the search action
+  const handleSearch = (e) => {
+    e.preventDefault(); // Prevent the default form submit
+    // Here, you can implement logic for handling the search query
+    // For now, we will just navigate to a route with search query as a URL parameter
+    if (searchQuery) {
+      navigate(`/home/allproducts?search=${searchQuery}`); // Navigates to all products with search query
+    }
+  };
 
   return (
     <header className="header">
@@ -65,7 +77,6 @@ const Header = () => {
                 </h1>
               </div>
             </Col>
-            {/* Smart Eager Enterprise */}
 
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
@@ -74,27 +85,13 @@ const Header = () => {
                 </span>
                 <div className="header__location-content">
                   <h4>Badshahpur Office</h4>
-                  <h6>Haryana, 122101</h6>
+                  <h6>Haryana, 122101</h6>
                 </div>
               </div>
             </Col>
 
-            {/* Badshahpur Office
-Teekali-Akhlimpur Road,
-City- Badshahpur,
-Haryana, Pin - 122101 */}
-
             <Col lg="3" md="3" sm="4">
-              <div className="header__location d-flex align-items-center gap-2">
-                {/* <span>
-                  <i className="ri-time-line"></i>
-                </span>
-                <div className="header__location-content">
-                  <h4>All Day</h4>
-                  <h6>8am - 10pm</h6>
-                </div> */}
-
-              </div>
+              {/* Empty Column for layout */}
             </Col>
 
             <Col
@@ -106,6 +103,7 @@ Haryana, Pin - 122101 */}
                 gap: "20px",
               }}
             >
+              {/* Button for Request a Call */}
               <button
                 className="header__btn btn"
                 style={{
@@ -129,6 +127,7 @@ Haryana, Pin - 122101 */}
                 </a>
               </button>
 
+              {/* Button for WhatsApp */}
               <button
                 className="whatsapp_button"
                 style={{
@@ -156,7 +155,6 @@ Haryana, Pin - 122101 */}
                   <i className="ri-whatsapp-line"></i> WhatsApp
                 </a>
               </button>
-            
             </Col>
           </Row>
         </Container>
@@ -188,10 +186,17 @@ Haryana, Pin - 122101 */}
 
             <div className="nav__right">
               <div className="search__box">
-                <input type="text" placeholder="Search" />
-                <span>
-                  <i className="ri-search-line"></i>
-                </span>
+                <form onSubmit={handleSearch}>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    value={searchQuery} // bind input value to searchQuery
+                    onChange={(e) => setSearchQuery(e.target.value)} // update searchQuery on input change
+                  />
+                  <span>
+                    <i className="ri-search-line"></i>
+                  </span>
+                </form>
               </div>
             </div>
           </div>

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
+import { toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "../styles/contact.css";
 
@@ -35,6 +37,7 @@ const Contact = () => {
 
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(null);
+  const navigate = useNavigate(); // Initialize navigate here
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -70,6 +73,18 @@ const Contact = () => {
         console.log("Success:", result);
         setSubmitSuccess(true);
         setFormData({ name: "", email: "", mobile: "", message: "" });
+        toast.success("Message sent successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
+        navigate("/"); // Correctly place navigate here after successful submission
       } else {
         throw new Error("Submission failed: " + response.statusText);
       }
@@ -78,6 +93,17 @@ const Contact = () => {
       setSubmitError(
         "An error occurred while submitting the form. Please try again."
       );
+      toast.error("Something went wrong", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
     }
   };
 

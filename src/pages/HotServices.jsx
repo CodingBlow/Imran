@@ -291,7 +291,7 @@ const services = [
     id: 12,
     name: "RO Water Purifier",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -364,7 +364,7 @@ const services = [
     id: 14,
     name: "Refreigrator 2",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RentalFormPage = () => {
   const location = useLocation();
@@ -63,6 +65,17 @@ const RentalFormPage = () => {
         setEmail("");
         setDeliveryAddress("");
         setMessage("");
+        toast.success("Booking submitted successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
       } else {
         throw new Error("Submission failed: " + response.statusText);
       }
@@ -71,6 +84,20 @@ const RentalFormPage = () => {
       setSubmitError(
         "An error occurred while submitting the form. Please try again."
       ); // Set error state
+      toast.error(
+        "An error occurred while submitting the form. Please try again.",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        }
+      );
     } finally {
       setIsSubmitting(false); // Reset submitting state
     }
