@@ -1,11 +1,9 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { Link } from "react-router-dom";
-import "../../styles/footer.css";
 
 const quickLinks = [
   { path: "/about", display: "About Us" },
-  // { path: "/Privacy_Policy", display: "Privacy Policy" },
   { path: "/service-Booking", display: "Services" },
   { path: "/contact", display: "Contact" },
 ];
@@ -21,6 +19,209 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+      <style>{`
+        .footer {
+          background: #000d6b;
+          padding-top: 50px;
+          padding-bottom: 15px;
+          margin-top: 5%;
+        }
+        .footer__logo i {
+          color: #fff;
+          font-weight: 400;
+        }
+        .footer__logo span {
+          color: #fff;
+          font-weight: 500;
+        }
+        .footer__logo-content {
+          color: rgba(255, 255, 255, 0.715);
+          margin-top: 15px;
+          line-height: 30px;
+        }
+        .quick__link {
+          border: none !important;
+          background: transparent !important;
+        }
+        .quick__link a {
+          color: rgba(255, 255, 255, 0.715);
+          text-decoration: none;
+          font-weight: 300;
+          transition: 0.3s;
+        }
+        .quick__link a:hover {
+          color: #f9a826;
+        }
+        .footer__link-title {
+          color: #fff;
+        }
+        .office__info {
+          color: rgba(255, 255, 255, 0.715);
+          font-weight: 300;
+        }
+        .newsletter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 8px 12px;
+          border: 1px solid #7c8a972f;
+          border-radius: 50px;
+          background: #020a4de9;
+        }
+        .newsletter input {
+          background: transparent;
+          color: #fff;
+          border: none;
+          outline: none;
+        }
+        .newsletter span i {
+          color: #fff;
+        }
+        .footer__bottom {
+          border-top: 1px solid #7c8a972f;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          text-align: center;
+          flex-wrap: wrap;
+        }
+
+        .footer__bottom p {
+          margin: 5px 0;
+        }
+
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 992px) {
+          .footer {
+            padding-top: 40px;
+            padding-bottom: 20px;
+          }
+          .footer__logo-content {
+            font-size: 0.9rem;
+          }
+          .quick__link,
+          .office__info {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+          }
+          .footer__link-title {
+            font-size: 1.1rem;
+            margin-top: 20px;
+          }
+          .footer__bottom p {
+            font-size: 0.8rem;
+          }
+          .newsletter {
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            padding: 12px;
+          }
+          .newsletter input {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+          }
+          .newsletter span {
+            display: block;
+            text-align: center;
+          }
+        }
+
+        @media only screen and (max-width: 768px) {
+          .footer {
+            padding-top: 30px;
+            padding-bottom: 25px;
+          }
+          .footer__logo-content {
+            font-size: 0.8rem;
+            text-align: center;
+          }
+          .quick__link,
+          .office__info {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+          }
+          .footer__link-title {
+            font-size: 1rem;
+            margin-top: 15px;
+          }
+          .footer__bottom {
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 15px 0;
+            flex-direction: column;  /* Stack the content in mobile */
+          }
+          .newsletter {
+            width: 100%;
+            margin-top: 10px;
+          }
+          .newsletter input {
+            font-size: 0.85rem;
+          }
+          .newsletter span {
+            font-size: 1.2rem;
+            margin-top: 10px;
+          }
+        }
+
+        @media only screen and (max-width: 576px) {
+          .footer__logo-content {
+            font-size: 0.75rem;
+            text-align: center;
+          }
+          .quick__link,
+          .office__info {
+            font-size: 0.75rem;
+            line-height: 1.4rem;
+          }
+          .footer__link-title {
+            font-size: 0.9rem;
+            margin-top: 10px;
+          }
+          .footer__bottom {
+            font-size: 0.65rem;
+            padding: 12px 0;
+          }
+          .newsletter {
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            padding: 10px;
+          }
+          .newsletter input {
+            font-size: 0.75rem;
+          }
+          .newsletter span {
+            font-size: 1.1rem;
+            margin-top: 8px;
+          }
+
+          /* Adjustments for copyright and Zuridox on mobile */
+          .footer__bottom p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+
+          .footer__bottom p span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .footer__bottom p span i {
+            margin-right: 5px; /* Space between the copyright icon and year */
+          }
+
+          .footer__bottom p a {
+            color: #f9a826;
+            text-decoration: none;
+          }
+        }
+      `}</style>
       <Container>
         <Row>
           <Col lg="4" md="4" sm="12">
@@ -77,29 +278,28 @@ const Footer = () => {
               </p>
               <p className="office__info">Phone: +91-9306174774</p>
               <p className="office__info">Email: Info@smartEager.com</p>
-              <p className="office__info">Office Time: 08am - 10pm</p>
-            </div>
-          </Col>
-
-          <Col lg="12">
-            <div className="footer__bottom">
-              <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
-                <i className="ri-copyright-line"></i>Copyright {year}, Developed
-                by
-                <a
-                  href="https://www.zuridox.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Zuridox
-                </a>
-                . All rights reserved Smart Eager Enterprise
-              </p>
             </div>
           </Col>
         </Row>
       </Container>
+      <div className="footer__bottom">
+  <p>
+    <span>
+      <i className="ri-copyright-line"></i> Copyright {year}{" "}
+    </span>
+    <span>
+      <a
+        href="https://zuridox.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Zuridox  &nbsp; 
+      </a>
+    </span>
+  </p>
+  <p> All rights reserved. Smart Eager Enterprise</p>
+</div>
+
     </footer>
   );
 };

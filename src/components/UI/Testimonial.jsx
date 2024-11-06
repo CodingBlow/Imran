@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 
-import "../../styles/testimonial.css";
-
 import ava01 from "../../assets/all-images/ava-1.jpg";
 import ava02 from "../../assets/all-images/ava-2.jpg";
 import ava03 from "../../assets/all-images/ava-3.jpg";
@@ -39,67 +37,137 @@ const Testimonial = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
-          "I rented an AC unit for a summer event, and it worked perfectly! The service was prompt and professional. Highly recommend!"
-        </p>
-
-        <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava01} alt="Customer 1" className="w-25 h-25 rounded-2" />
-
-          <div>
-            <h6 className="mb-0 mt-3">Priya Sharma</h6>
-            <p className="section__description">Event Planner</p>
+    <div style={{ padding: "2rem", backgroundColor: "#f9f9f9" }}>
+      <Slider {...settings}>
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+            padding: "1.5rem",
+          }}
+        >
+          <p style={{ color: "#555", fontSize: "1rem" }}>
+            "I rented an AC unit for a summer event, and it worked perfectly!
+            The service was prompt and professional. Highly recommend!"
+          </p>
+          <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "1rem" }}>
+            <img
+              src={ava01}
+              alt="Customer 1"
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            />
+            <div>
+              <h6 style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "0.5rem" }}>
+                Priya Sharma
+              </h6>
+              <p style={{ color: "#555", fontSize: "0.9rem" }}>Event Planner</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
-          "The washing machine rental was a lifesaver during my house renovation. Fast delivery and easy setup!"
-        </p>
-
-        <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava02} alt="Customer 2" className="w-25 h-25 rounded-2" />
-
-          <div>
-            <h6 className="mb-0 mt-3">Rahul Verma</h6>
-            <p className="section__description">Homeowner</p>
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+            padding: "1.5rem",
+          }}
+        >
+          <p style={{ color: "#555", fontSize: "1rem" }}>
+            "The washing machine rental was a lifesaver during my house
+            renovation. Fast delivery and easy setup!"
+          </p>
+          <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "1rem" }}>
+            <img
+              src={ava02}
+              alt="Customer 2"
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            />
+            <div>
+              <h6 style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "0.5rem" }}>
+                Rahul Verma
+              </h6>
+              <p style={{ color: "#555", fontSize: "0.9rem" }}>Homeowner</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
-          "I recently rented a RO water purifier, and it’s been a game changer! Clean water at my convenience."
-        </p>
-
-        <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava03} alt="Customer 3" className="w-25 h-25 rounded-2" />
-
-          <div>
-            <h6 className="mb-0 mt-3">Sneha Gupta</h6>
-            <p className="section__description">Health Conscious</p>
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+            padding: "1.5rem",
+          }}
+        >
+          <p style={{ color: "#555", fontSize: "1rem" }}>
+            "I recently rented a RO water purifier, and it’s been a game
+            changer! Clean water at my convenience."
+          </p>
+          <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "1rem" }}>
+            <img
+              src={ava03}
+              alt="Customer 3"
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            />
+            <div>
+              <h6 style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "0.5rem" }}>
+                Sneha Gupta
+              </h6>
+              <p style={{ color: "#555", fontSize: "0.9rem" }}>Health Conscious</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="testimonial py-4 px-3">
-        <p className="section__description">
-          "I rented construction equipment for my project, and the quality was excellent. Will definitely rent again!"
-        </p>
-
-        <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava04} alt="Customer 4" className="w-25 h-25 rounded-2" />
-
-          <div>
-            <h6 className="mb-0 mt-3">Arjun Mehta</h6>
-            <p className="section__description">Contractor</p>
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: "8px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+            padding: "1.5rem",
+          }}
+        >
+          <p style={{ color: "#555", fontSize: "1rem" }}>
+            "I rented construction equipment for my project, and the quality
+            was excellent. Will definitely rent again!"
+          </p>
+          <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "1rem" }}>
+            <img
+              src={ava04}
+              alt="Customer 4"
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            />
+            <div>
+              <h6 style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "0.5rem" }}>
+                Arjun Mehta
+              </h6>
+              <p style={{ color: "#555", fontSize: "0.9rem" }}>Contractor</p>
+            </div>
           </div>
         </div>
-      </div>
-    </Slider>
+      </Slider>
+    </div>
   );
 };
 

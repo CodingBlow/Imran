@@ -3,7 +3,9 @@ import React from 'react';
 const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
   return (
     <div style={styles.container}>
-      
+      {/* Heading for the Page */}
+      <h1 style={styles.title}>Select Seasonal Services</h1>
+
       <div style={styles.cardContainer}>
         {/* Summer Rentals Card */}
         <div 
@@ -42,9 +44,9 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
 // Styles as a JavaScript object
 const styles = {
   container: {
-    minHeight: '50vh',
+    minHeight: '60vh',
     backgroundColor: '#f7fafc',
-    padding: '0 2rem', // Removed vertical padding and kept horizontal padding
+    padding: '2rem 2rem', // Increased vertical padding for more top and bottom space
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -54,22 +56,17 @@ const styles = {
     fontSize: '2.5rem',
     fontWeight: 'bold',
     color: '#1a202c',
-    marginBottom: '0.5rem', // Reduced margin-bottom for less space
-  },
-  description: {
+    marginBottom: '2rem', // Increased margin-bottom for more space below the heading
     textAlign: 'center',
-    color: '#4a5568',
-    marginBottom: '1rem', // Reduced margin-bottom
-    maxWidth: '600px',
   },
   cardContainer: {
     display: 'flex',
     flexDirection: 'row',
-    gap: '2rem',
+    gap: '2rem', // Space between cards
     justifyContent: 'center',
-    flexWrap: 'wrap', // To make it responsive
-    marginTop: '1rem', // Reduced margin-top for the card container
-    marginBottom: '1rem', // Reduced margin-bottom for the card container
+    flexWrap: 'wrap', // Wrap cards on smaller screens
+    marginTop: '2rem', // Increased margin-top for better spacing
+    marginBottom: '2rem', // Increased margin-bottom for better spacing
   },
   card: {
     width: '280px',
@@ -95,12 +92,12 @@ const styles = {
   cardTitle: {
     fontSize: '1.5rem',
     fontWeight: 'bold',
-    marginBottom: '0.5rem', // Reduced margin-bottom
+    marginBottom: '0.5rem',
   },
   cardText: {
     fontSize: '1rem',
     color: '#e2e8f0',
-    marginBottom: '1rem', // Reduced margin-bottom
+    marginBottom: '1rem',
   },
   action: {
     fontSize: '1rem',
@@ -109,6 +106,22 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  // Media query for responsiveness
+  '@media (max-width: 768px)': {
+    container: {
+      padding: '1rem', // Reduce padding for smaller screens
+    },
+    title: {
+      fontSize: '2rem', // Reduce font size for the title
+    },
+    card: {
+      width: '100%', // Make cards take full width on smaller screens
+    },
+    cardContainer: {
+      flexDirection: 'column', // Stack cards vertically
+      gap: '1.5rem', // Adjust gap between cards
+    },
   },
 };
 
