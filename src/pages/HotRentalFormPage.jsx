@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { useNavigate } from "react-router-dom";
 const RentalFormPage = () => {
   const location = useLocation();
   const service = location.state?.service;
@@ -18,7 +18,7 @@ const RentalFormPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false); // To track submission state
   const [submitSuccess, setSubmitSuccess] = useState(false); // To track submission success
   const [submitError, setSubmitError] = useState(null); // To track submission error
-
+  const navigate = useNavigate();
   if (!service) {
     return <p>Service not found</p>;
   }
@@ -28,7 +28,7 @@ const RentalFormPage = () => {
     setIsSubmitting(true); // Set submitting state to true
     setSubmitSuccess(false); // Reset success state
     setSubmitError(null); // Reset error state
-
+   
     // Form data including the service name
     const formData = {
       serviceName: service.name, // This sends the service name to the backend
@@ -76,6 +76,7 @@ const RentalFormPage = () => {
           theme: "colored",
           transition: Bounce,
         });
+        navigate("/");
       } else {
         throw new Error("Submission failed: " + response.statusText);
       }
