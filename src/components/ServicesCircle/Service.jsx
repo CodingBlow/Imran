@@ -6,6 +6,11 @@ import RO from "../../assets/all-images/RO.jpg";
 const Services = () => {
   const services = [
     {
+      name: "Room Heater",
+      image: AC,
+      link: "/room-heater",
+    },
+    {
       name: "AC",
       image: AC,
       link: "/ac",
@@ -37,12 +42,6 @@ const Services = () => {
       image:
         "https://rukminim1.flixcart.com/image/1664/1664/inverter/p/y/c/900-va-ups-eb-microtek-original-imae47yfjy8zzhg7.jpeg?q=90",
       link: "/inverter-rental",
-    },
-    {
-      name: "Construction Equipment",
-      image:
-        "https://i5.walmartimages.com/asr/1662c8bf-fa28-4550-8d42-e135c305336d.ea59a6c0893ca02e5db79402e16f7e75.jpeg",
-      link: "/construction-equipment-rental",
     },
   ];
 

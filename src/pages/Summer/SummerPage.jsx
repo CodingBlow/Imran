@@ -3,20 +3,26 @@ import { Container, Row, Col } from "reactstrap";
 import Helmet from "../../components/Helmet/Helmet";
 import CommonSection from "../../components/UI/CommonSection";
 import services from "../HotServices";
-import InverterItem from "./InverterItem";
+import SummerItem from "./SummerItem";
 
-const InverterPage = () => {
-  const acServices = services.filter((service) => service.code === 106);
+const SummerPage = () => {
+  const acServices = services.filter(
+    (service) =>
+      service.code === 102 ||
+      service.code === 104 ||
+      service.code === 100 ||
+      service.code === 101
+  );
 
   return (
-    <Helmet title="Inverters">
-      <CommonSection title="Available Inverters" />
+    <Helmet title="Summer Products">
+      <CommonSection title="Available Products for Summer" />
       <section>
         <Container>
           <Row>
             {acServices.map((item) => (
               <Col lg="4" md="6" key={item.code}>
-                <InverterItem item={item} />
+                <SummerItem item={item} />
               </Col>
             ))}
           </Row>
@@ -26,4 +32,4 @@ const InverterPage = () => {
   );
 };
 
-export default InverterPage;
+export default SummerPage;

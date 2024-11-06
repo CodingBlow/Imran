@@ -37,7 +37,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,500/month",
     },
     price: "₹1,200/month",
-    code : 100,
+    code: 104,
   },
   {
     id: 3,
@@ -73,7 +73,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹800/month",
     },
     price: "₹700/month",
-    code: 102,
+    code: 105,
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,200/month",
     },
     price: "₹900/month",
-    code: 102,
+    code: 108,
   },
   {
     id: 6,
@@ -110,7 +110,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹600/month",
     },
     price: "₹600/month",
-    code: 102,
+    code: 107,
   },
 
   //  Repeating Cards
@@ -176,7 +176,7 @@ const services = [
     },
     price: "1,800/month",
   },
-  // Geyser code=101 
+  // Geyser code=105
   {
     id: 19,
     name: "Geyser",
@@ -193,7 +193,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 101,
+    code: 105,
   },
   {
     id: 20,
@@ -211,7 +211,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 101,
+    code: 105,
   },
   {
     id: 21,
@@ -286,12 +286,12 @@ const services = [
     price: "₹900/month",
     code: 102,
   },
-  // RO Water code=103 
+  // RO Water code=103
   {
     id: 12,
     name: "RO Water Purifier",
     image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -341,7 +341,7 @@ const services = [
     price: "₹900/month",
     code: 103,
   },
-  // Refrigrator code=104 
+  // Refrigrator code=104
   {
     id: 13,
     name: "Refreigrator",
@@ -364,7 +364,7 @@ const services = [
     id: 14,
     name: "Refreigrator 2",
     image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -396,10 +396,10 @@ const services = [
     price: "₹900/month",
     code: 104,
   },
-  // Inverter code=105 
+  // Inverter code=106
   {
     id: 22,
-    name:"Inverter",
+    name: "Inverter",
     image:
       "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
@@ -413,7 +413,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 105,
+    code: 106,
   },
   {
     id: 23,
@@ -431,7 +431,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 105,
+    code: 106,
   },
   {
     id: 24,
@@ -449,12 +449,12 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 105,
+    code: 106,
   },
-  // Construction code=106 
+  // Construction code=109
   {
     id: 25,
-    name:"Construction",
+    name: "Construction",
     image:
       "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "Fully Automatic RO, 7 Kg Capacity.",
@@ -468,7 +468,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 106,
+    code: 109,
   },
   {
     id: 26,
@@ -486,7 +486,7 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 106,
+    code: 109,
   },
   {
     id: 27,
@@ -504,9 +504,63 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 106,
+    code: 109,
   },
-  
+  {
+    id: 28,
+    name: "Construction-3",
+    image:
+      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Fully Automatic RO, 7 Kg Capacity.",
+    variants: {
+      "Top Load": "₹900/month",
+      "Front Load": "₹1,000/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹1,000/month",
+      "One Year (12 Months)": "₹1,000/month",
+      "Rest of Season (Till Nov/Dec)": "₹1,000/month",
+    },
+    price: "₹900/month",
+    code: 109,
+  },
+  // Room heater code=107
+  {
+    id: 29,
+    name: "Room Heater",
+    image:
+      "https://images.pexels.com/photos/5582777/pexels-photo-5582777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Portable Room Heater, Adjustable Temperature.",
+    variants: {
+      "Oil Filled": "₹700/month",
+      "Fan Heater": "₹600/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹600/month",
+      "One Year (12 Months)": "₹600/month",
+      "Rest of Season (Till Nov/Dec)": "₹600/month",
+    },
+    price: "₹600/month",
+    code: 107,
+  },
+  {
+    id: 30,
+    name: "Room Heater",
+    image:
+      "https://images.pexels.com/photos/5582777/pexels-photo-5582777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Portable Room Heater, Adjustable Temperature.",
+    variants: {
+      "Oil Filled": "₹700/month",
+      "Fan Heater": "₹600/month",
+    },
+    durations: {
+      "Full Season (Till Nov/Dec)": "₹600/month",
+      "One Year (12 Months)": "₹600/month",
+      "Rest of Season (Till Nov/Dec)": "₹600/month",
+    },
+    price: "₹600/month",
+    code: 107,
+  },
 ];
 
 export default services;

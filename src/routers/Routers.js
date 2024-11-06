@@ -12,7 +12,9 @@ import PrivacyPolicy from "../components/UI/Privacy_Policy";
 import BookingForm from "../components/UI/BookingForm";
 import ServicesList from "../components/UI/ServicesList";
 import ServiceDetails from "../pages/HotServiceDetails";
+import WinterPage from "../pages/Winter/WinterPage";
 import RentalFormPage from "../pages/HotRentalFormPage";
+import HeaterPage from "../pages/Heater/HeaterPage";
 import W_Machine from "../pages/WM/W_Machine";
 import ROPage from "../pages/RO-Purifier/ROPage";
 import RefPage from "../pages/refrigerator/RefrigeratorPage";
@@ -25,6 +27,7 @@ import ServicesDesc from "../components/UI/ServicesDesc";
 import Termsandcondition from "../components/Policies/T&Cpolicy";
 import ShippingPolicy from "../components/Policies/ShippingPolicy";
 import CancelRefPol from "../components/Policies/Cancel&RefPol";
+import SummerPage from "../pages/Summer/SummerPage";
 const Routers = () => {
   return (
     <>
@@ -48,6 +51,9 @@ const Routers = () => {
         <Route path="/refrigerator-rental" element={<RefPage />} />
         <Route path="/Geyser" element={<GeyserPage />} />
         <Route path="/inverter-rental" element={<InverterPage />} />
+        <Route path="/room-heater" element={<HeaterPage />} />
+        <Route path="/winter-products" element={<WinterPage />} />
+        <Route path="/summer-rentals" element={<SummerPage />} />
         <Route
           path="/construction-equipment-rental"
           element={<ConstructionPage />}

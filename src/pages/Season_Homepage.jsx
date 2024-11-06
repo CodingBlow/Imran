@@ -8,6 +8,23 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
       <h1 style={styles.title}>Select Seasonal Services</h1>
 
       <div style={styles.cardContainer}>
+        {/* Winter Rentals Card */}
+        <Link to="/winter-products" style={styles.link}>
+          <div
+            style={{ ...styles.card, ...styles.winterCard }}
+            onClick={onWinterClick}
+          >
+            <div style={styles.icon}>❄️</div>
+            <h2 style={styles.cardTitle}>Winter Rentals</h2>
+            <p style={styles.cardText}>
+              Discover heaters, geysers, and other winter essentials for a warm
+              and cozy season.
+            </p>
+            <div style={styles.action}>
+              <span>View Equipment</span> →
+            </div>
+          </div>
+        </Link>
         {/* Summer Rentals Card */}
         <Link to="/summer-rentals" style={styles.link}>
           <div
@@ -19,24 +36,6 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
             <p style={styles.cardText}>
               Choose from a range of cooling solutions, ACs, and summer-friendly
               appliances to keep you comfortable.
-            </p>
-            <div style={styles.action}>
-              <span>View Equipment</span> →
-            </div>
-          </div>
-        </Link>
-
-        {/* Winter Rentals Card */}
-        <Link to="/winter-rentals" style={styles.link}>
-          <div
-            style={{ ...styles.card, ...styles.winterCard }}
-            onClick={onWinterClick}
-          >
-            <div style={styles.icon}>❄️</div>
-            <h2 style={styles.cardTitle}>Winter Rentals</h2>
-            <p style={styles.cardText}>
-              Discover heaters, geysers, and other winter essentials for a warm
-              and cozy season.
             </p>
             <div style={styles.action}>
               <span>View Equipment</span> →

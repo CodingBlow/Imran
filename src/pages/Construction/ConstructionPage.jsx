@@ -6,7 +6,7 @@ import services from "../HotServices";
 import ConstructionItem from "./ConstructionItem";
 
 const ConstructionPage = () => {
-  const acServices = services.filter((service) => service.code === 106);
+  const acServices = services.filter((service) => service.code === 109);
 
   return (
     <Helmet title="Construction">
