@@ -24,15 +24,15 @@ const ServicesList = () => {
         </Button>
       </div>
 
-      {/* CSS Styles */}
+      {/* Updated CSS Styles */}
       <style jsx>{`
         .service__item {
-          padding: 1.5rem;
+          padding: 1rem; /* Reduced padding */
           border: 1px solid #ddd;
           border-radius: 8px;
           text-align: center;
           transition: transform 0.3s;
-          margin-bottom: 100px;
+          margin-bottom: 1.5rem; /* Reduced bottom margin for closer cards */
         }
 
         .service__item:hover {
@@ -47,7 +47,19 @@ const ServicesList = () => {
 
         @media (min-width: 992px) {
           .service__item {
-            margin: 0 auto;
+            margin: 0 auto; /* Center on larger screens */
+          }
+        }
+
+        @media (max-width: 768px) {
+          /* Adjustments for smaller screens */
+          .service__item {
+            padding: 0.8rem; /* Reduce padding for smaller screens */
+            margin-bottom: 1rem; /* Reduce gap between cards */
+          }
+
+          .text-center {
+            margin-top: 1rem; /* Reduce top margin for the button */
           }
         }
       `}</style>
@@ -59,17 +71,17 @@ const ServiceItem = ({ item }) => (
   <Col lg="4" md="4" sm="6" className="mb-3">
     <div className="service__item">
       <Link
-      to="/BookingForm"
-      style={{
-        textDecoration: "none"
-      }}
+        to="/BookingForm"
+        style={{
+          textDecoration: "none",
+        }}
       >
-      <span className="mb-3 d-inline-block">
-        <i className={item.icon} />
-      </span>
+        <span className="mb-3 d-inline-block">
+          <i className={item.icon} />
+        </span>
 
-      <h6>{item.title}</h6>
-      <p className="section__description">{item.desc}</p>
+        <h6>{item.title}</h6>
+        <p className="section__description">{item.desc}</p>
       </Link>
     </div>
   </Col>

@@ -11,7 +11,6 @@ import Season_card from "./Season_Homepage";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 
-
 import GoogleMap from "../components/GoogleMap/GoogleMap";
 import FindRental from "../components/UI/FindRental";
 import HotOffers from "../components/HotOffer/HotOffer";
@@ -20,14 +19,11 @@ const Home = () => {
   return (
     <Helmet title="Home">
       {/* ============= hero section =========== */}
-      
-        <HeroSlider />
 
-       
-        <Season_card/>
-        
-      
-      
+      <HeroSlider />
+
+      <Season_card />
+
       {/* =========== about section ================ */}
       {/* <AboutSection /> */}
       {/* ========== services section ============ */}
@@ -44,6 +40,20 @@ const Home = () => {
         </Row>
       </Container>
 
+      {/* ============== hot offers section ============= */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-3 text-center">
+              <h6 className="section__subtitle">See our</h6>
+              <h2 className="section__title">Hot Offers</h2>
+            </Col>
+
+            <HotOffers />
+          </Row>
+        </Container>
+      </section>
+{/* ========== services section ============ */}
       <section>
         <Container>
           <Row>
@@ -53,19 +63,6 @@ const Home = () => {
             </Col>
 
             <ServicesList />
-          </Row>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">See our</h6>
-              <h2 className="section__title">Hot Offers</h2>
-            </Col>
-
-            <HotOffers />
           </Row>
         </Container>
       </section>

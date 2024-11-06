@@ -53,7 +53,7 @@ const Services = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "30px",
+          gap: "20px", // Reduced gap for a tighter layout
           maxWidth: "1200px",
         }}
       >
@@ -62,8 +62,8 @@ const Services = () => {
             key={index}
             style={{
               position: "relative",
-              width: "200px",
-              height: "200px",
+              width: "180px", // Reduced size of circle
+              height: "180px", // Reduced size of circle
               borderRadius: "50%",
               overflow: "hidden",
               cursor: "pointer",
@@ -99,7 +99,7 @@ const Services = () => {
                 transform: "translateX(-50%)",
                 color: "#fff",
                 textAlign: "center",
-                fontSize: "1rem",
+                fontSize: "0.9rem", // Reduced font size for better proportion
                 fontWeight: "bold",
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 padding: "5px 10px",
@@ -122,9 +122,9 @@ const Services = () => {
       <style>
         {`
           @media (min-width: 768px) {
-            div[style*="width: 200px"] {
-              width: 250px;
-              height: 250px;
+            div[style*="width: 180px"] {
+              width: 220px; // Slightly increase size on medium screens
+              height: 220px;
             }
           }
 

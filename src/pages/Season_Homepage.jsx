@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
   return (
@@ -8,34 +9,38 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
 
       <div style={styles.cardContainer}>
         {/* Summer Rentals Card */}
-        <div 
-          style={{ ...styles.card, ...styles.summerCard }}
-          onClick={onSummerClick}
-        >
-          <div style={styles.icon}>☀️</div>
-          <h2 style={styles.cardTitle}>Summer Rentals</h2>
-          <p style={styles.cardText}>
-            Premium equipment for your summer adventures, from water sports to camping gear.
-          </p>
-          <div style={styles.action}>
-            <span>View Equipment</span> →
+        <Link to="/summer-rentals" style={styles.link}>
+          <div
+            style={{ ...styles.card, ...styles.summerCard }}
+            onClick={onSummerClick}
+          >
+            <div style={styles.icon}>☀️</div>
+            <h2 style={styles.cardTitle}>Summer Rentals</h2>
+            <p style={styles.cardText}>
+              Choose from a range of cooling solutions, ACs, and summer-friendly appliances to keep you comfortable.
+            </p>
+            <div style={styles.action}>
+              <span>View Equipment</span> →
+            </div>
           </div>
-        </div>
+        </Link>
 
         {/* Winter Rentals Card */}
-        <div 
-          style={{ ...styles.card, ...styles.winterCard }}
-          onClick={onWinterClick}
-        >
-          <div style={styles.icon}>❄️</div>
-          <h2 style={styles.cardTitle}>Winter Rentals</h2>
-          <p style={styles.cardText}>
-            High-quality winter sports equipment and gear for the perfect snow season.
-          </p>
-          <div style={styles.action}>
-            <span>View Equipment</span> →
+        <Link to="/winter-rentals" style={styles.link}>
+          <div
+            style={{ ...styles.card, ...styles.winterCard }}
+            onClick={onWinterClick}
+          >
+            <div style={styles.icon}>❄️</div>
+            <h2 style={styles.cardTitle}>Winter Rentals</h2>
+            <p style={styles.cardText}>
+              Discover heaters, geysers, and other winter essentials for a warm and cozy season.
+            </p>
+            <div style={styles.action}>
+              <span>View Equipment</span> →
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
@@ -46,7 +51,7 @@ const styles = {
   container: {
     minHeight: '60vh',
     backgroundColor: '#f7fafc',
-    padding: '2rem 2rem', // Increased vertical padding for more top and bottom space
+    padding: '2rem 2rem',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -56,21 +61,21 @@ const styles = {
     fontSize: '2.5rem',
     fontWeight: 'bold',
     color: '#1a202c',
-    marginBottom: '2rem', // Increased margin-bottom for more space below the heading
+    marginBottom: '1.5rem', // Reduced margin-bottom for less vertical space
     textAlign: 'center',
   },
   cardContainer: {
     display: 'flex',
     flexDirection: 'row',
-    gap: '2rem', // Space between cards
+    gap: '1.5rem',
     justifyContent: 'center',
-    flexWrap: 'wrap', // Wrap cards on smaller screens
-    marginTop: '2rem', // Increased margin-top for better spacing
-    marginBottom: '2rem', // Increased margin-bottom for better spacing
+    flexWrap: 'wrap',
+    marginTop: '1rem', // Reduced margin-top for less vertical space
+    marginBottom: '1rem', // Reduced margin-bottom for less vertical space
   },
   card: {
-    width: '280px',
-    padding: '1.5rem',
+    width: '260px',
+    padding: '1rem',
     borderRadius: '8px',
     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
@@ -87,17 +92,17 @@ const styles = {
   },
   icon: {
     fontSize: '2.5rem',
-    marginBottom: '1rem',
+    marginBottom: '0.5rem',
   },
   cardTitle: {
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     fontWeight: 'bold',
     marginBottom: '0.5rem',
   },
   cardText: {
-    fontSize: '1rem',
+    fontSize: '0.9rem',
     color: '#e2e8f0',
-    marginBottom: '1rem',
+    marginBottom: '0.5rem',
   },
   action: {
     fontSize: '1rem',
@@ -107,20 +112,27 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
   },
+  link: {
+    textDecoration: 'none',
+  },
   // Media query for responsiveness
   '@media (max-width: 768px)': {
     container: {
-      padding: '1rem', // Reduce padding for smaller screens
+      padding: '1rem', // Reduced padding on smaller screens
     },
     title: {
-      fontSize: '2rem', // Reduce font size for the title
+      fontSize: '2rem',
+      marginBottom: '1rem', // Further reduced margin-bottom
     },
     card: {
-      width: '100%', // Make cards take full width on smaller screens
+      width: '100%',
+      padding: '0.8rem', // Reduced padding inside the cards
     },
     cardContainer: {
-      flexDirection: 'column', // Stack cards vertically
-      gap: '1.5rem', // Adjust gap between cards
+      flexDirection: 'column',
+      gap: '1rem', // Adjusted gap between cards
+      marginTop: '0.5rem', // Further reduced vertical spacing
+      marginBottom: '0.5rem', // Further reduced vertical spacing
     },
   },
 };

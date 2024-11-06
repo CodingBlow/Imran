@@ -37,8 +37,7 @@ const HotOffers = () => {
 const styles = {
   container: {
     maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "2rem 1rem",
+    margin: "0",
   },
 
   grid: {
@@ -56,6 +55,8 @@ const styles = {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
     transition: "box-shadow 0.3s ease",
     border: "1px solid #eee",
+    padding: "0.5rem", // Reduce padding for a smaller appearance
+    transform: "scale(0.95)", // Slightly scale down the card
   },
 
   imageContainer: {
