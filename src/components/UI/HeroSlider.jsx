@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../../styles/hero-slider.css";
-import RentalFormPage from "../../pages/HotRentalFormPage";
+
 
 const HeroSlider = () => {
   const settings = {
