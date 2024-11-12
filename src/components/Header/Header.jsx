@@ -174,7 +174,7 @@ const Navbar = () => {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/YOUR_PHONE_NUMBER"
+          href="https://wa.me/+919306186668"
           target="_blank"
           rel="noopener noreferrer"
           style={styles.whatsappButton}
@@ -183,9 +183,9 @@ const Navbar = () => {
         </a>
 
         {/* Call Now Button with Phone Number (Visible only on desktop) */}
-        <a href="tel:+7050068050" style={styles.callNowButton}>
+        <a href="tel:+919306186668" style={styles.callNowButton}>
           <FaPhoneAlt style={{ fontSize: "20px" }} />
-          <span style={styles.callNowText}>+917050068050</span>
+          <span style={styles.callNowText}>+919306186668</span>
         </a>
       </div>
     </nav>
