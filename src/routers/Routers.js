@@ -28,6 +28,7 @@ import Termsandcondition from "../components/Policies/T&Cpolicy";
 import ShippingPolicy from "../components/Policies/ShippingPolicy";
 import CancelRefPol from "../components/Policies/Cancel&RefPol";
 import SummerPage from "../pages/Summer/SummerPage";
+import ACMaintainance from "../pages/Maintainance_Services/Maintainance";
 const Routers = () => {
   return (
     <>
@@ -38,6 +39,7 @@ const Routers = () => {
         <Route path="/about" element={<About />} />
         <Route path="/service/:id" element={<ServiceDetails />} />
         <Route path="/rental-form" element={<RentalFormPage />} />
+        <Route path="/maintainance-services" element={<ACMaintainance />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/blogs/:slug" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
