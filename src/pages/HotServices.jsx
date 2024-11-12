@@ -7,7 +7,6 @@ const services = [
       "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
-      "0.75 TON": "₹1,800/month",
       "1.0 TON": "₹2,000/month",
       "1.5 TON": "₹2,200/month",
       "2.0 TON": "₹2,500/month",
@@ -124,7 +123,6 @@ const services = [
       "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
-      "0.75 TON": "₹1,800/month",
       "1.0 TON": "₹2,000/month",
       "1.5 TON": "₹2,200/month",
       "2.0 TON": "₹2,500/month",
@@ -144,7 +142,6 @@ const services = [
       "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
-      "0.75 TON": "₹1,800/month",
       "1.0 TON": "₹2,000/month",
       "1.5 TON": "₹2,200/month",
       "2.0 TON": "₹2,500/month",
@@ -164,7 +161,6 @@ const services = [
       "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
-      "0.75 TON": "₹1,800/month",
       "1.0 TON": "₹2,000/month",
       "1.5 TON": "₹2,200/month",
       "2.0 TON": "₹2,500/month",
