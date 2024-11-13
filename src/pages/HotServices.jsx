@@ -23,7 +23,7 @@ const services = [
     id: 2,
     name: "Refrigerator",
     image:
-      "https://images.pexels.com/photos/4046365/pexels-photo-4046365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/LG-Refrigerator-PNG-Background-Image.png",
     description: "Double Door Refrigerator, 250L Capacity, Energy Efficient.",
     variants: {
       Small: "₹1,200/month",
@@ -42,7 +42,7 @@ const services = [
     id: 3,
     name: "Washing Machine",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/Washing-Machine-Download-PNG-Image.png",
     description: "Fully Automatic Washing Machine, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -59,8 +59,7 @@ const services = [
   {
     id: 4,
     name: "Geyser",
-    image:
-      "https://images.pexels.com/photos/4207785/pexels-photo-4207785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/6/Geyser-PNG-File.png",
     description: "Instant Geyser, 3L Capacity, Energy Efficient.",
     variants: {
       Electric: "₹700/month",
@@ -77,8 +76,7 @@ const services = [
   {
     id: 5,
     name: "LED TV",
-    image:
-      "https://images.pexels.com/photos/5117340/pexels-photo-5117340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/7/LED-Television-PNG-Photo.png",
     description: "Smart LED TV, 43 inch, Full HD.",
     variants: {
       "32 inch": "₹900/month",
@@ -96,8 +94,7 @@ const services = [
   {
     id: 6,
     name: "Room Heater",
-    image:
-      "https://images.pexels.com/photos/5582777/pexels-photo-5582777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/6/Space-Heater-PNG-Picture.png",
     description: "Portable Room Heater, Adjustable Temperature.",
     variants: {
       "Oil Filled": "₹700/month",
@@ -117,10 +114,10 @@ const services = [
 
   {
     id: 7,
-    name: "Air Conditioner",
+    name: "Air Conditioner 1",
     code: 100,
     image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/7/Air-Conditioner-PNG-Transparent-Picture.png",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
       "1.0 TON": "₹2,000/month",
@@ -136,10 +133,9 @@ const services = [
   },
   {
     id: 8,
-    name: "Air Conditioner",
+    name: "Air Conditioner 2",
     code: 100,
-    image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/7/Air-Conditioner-PNG-HD.png",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
       "1.0 TON": "₹2,000/month",
@@ -155,10 +151,9 @@ const services = [
   },
   {
     id: 18,
-    name: "Air Conditioner",
+    name: "Air Conditioner 3",
     code: 100,
-    image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/22/LG-PNG-Isolated-Photo.png",
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
       "1.0 TON": "₹2,000/month",
@@ -172,13 +167,15 @@ const services = [
     },
     price: "1,800/month",
   },
+
   // Geyser code=105
+
   {
     id: 19,
-    name: "Geyser",
+    name: "Geyser 5",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Fully Automatic RO, 7 Kg Capacity.",
+      "https://www.pngmart.com/files/6/Electric-Geyser-PNG-Transparent-Picture.png",
+    description: "Instant Geyser, 3L Capacity, Energy Efficient.",
     variants: {
       "Top Load": "₹900/month",
       "Front Load": "₹1,000/month",
@@ -194,9 +191,8 @@ const services = [
   {
     id: 20,
     name: "Geyser 2",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Fully Automatic RO, 7 Kg Capacity.",
+    image: "https://www.pngmart.com/files/6/Electric-Geyser-PNG-HD.png",
+    description: "Instant Geyser, 3L Capacity, Energy Efficient.",
     variants: {
       "Top Load": "₹900/month",
       "Front Load": "₹1,000/month",
@@ -212,9 +208,8 @@ const services = [
   {
     id: 21,
     name: "Geyser-3",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Fully Automatic RO, 7 Kg Capacity.",
+    image: "https://www.pngmart.com/files/6/Geyser-PNG-Transparent-Image.png",
+    description: "Instant Geyser, 3L Capacity, Energy Efficient.",
     variants: {
       "Top Load": "₹900/month",
       "Front Load": "₹1,000/month",
@@ -225,14 +220,14 @@ const services = [
       "Rest of Season (Till Nov/Dec)": "₹1,000/month",
     },
     price: "₹900/month",
-    code: 101,
+    code: 105,
   },
   //Washing machine = 102
   {
     id: 9,
-    name: "Washing Machine",
+    name: "Washing Machine 1",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/Washing-Machine-PNG-Transparent-Image.png",
     description: "Fully Automatic Washing Machine, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -248,9 +243,9 @@ const services = [
   },
   {
     id: 10,
-    name: "Washing Machine",
+    name: "Washing Machine 2",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/Washing-Machine-PNG-Background-Image.png",
     description: "Fully Automatic Washing Machine, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -266,9 +261,8 @@ const services = [
   },
   {
     id: 11,
-    name: "Washing Machine",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    name: "Washing Machine 3",
+    image: "https://www.pngmart.com/files/6/Washing-Machine-PNG-Photo.png",
     description: "Fully Automatic Washing Machine, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -285,9 +279,9 @@ const services = [
   // RO Water code=103
   {
     id: 12,
-    name: "RO Water Purifier",
+    name: "RO Water Purifier 1",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/Water-Purifier-Transparent-Background.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -303,9 +297,8 @@ const services = [
   },
   {
     id: 16,
-    name: "RO Water Purifier",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    name: "RO Water Purifier 2",
+    image: "https://www.pngmart.com/files/6/Water-Purifier-PNG-Photos.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -321,9 +314,8 @@ const services = [
   },
   {
     id: 17,
-    name: "RO Water Purifier",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    name: "RO Water Purifier 3",
+    image: "https://www.pngmart.com/files/6/Kent-RO-Water-Purifier-PNG-HD.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -342,8 +334,8 @@ const services = [
     id: 13,
     name: "Refreigrator",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Fully Automatic RO, 7 Kg Capacity.",
+      "https://www.pngmart.com/files/6/LG-Refrigerator-Download-PNG-Image.png",
+    description: "Double Door Refrigerator, 250L Capacity, Energy Efficient.",
     variants: {
       "Top Load": "₹900/month",
       "Front Load": "₹1,000/month",
@@ -359,9 +351,8 @@ const services = [
   {
     id: 14,
     name: "Refreigrator 2",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Fully Automatic RO, 7 Kg Capacity.",
+    image: "https://www.pngmart.com/files/6/LG-Refrigerator-Background-PNG.png",
+    description: "Double Door Refrigerator, 250L Capacity, Energy Efficient.",
     variants: {
       "Top Load": "₹900/month",
       "Front Load": "₹1,000/month",
@@ -378,8 +369,8 @@ const services = [
     id: 15,
     name: "Refreigrator-3",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Fully Automatic RO, 7 Kg Capacity.",
+      "https://www.pngmart.com/files/3/Single-Door-Refrigerator-PNG-Photos.png",
+    description: "Double Door Refrigerator, 250L Capacity, Energy Efficient.",
     variants: {
       "Top Load": "₹900/month",
       "Front Load": "₹1,000/month",
@@ -392,12 +383,13 @@ const services = [
     price: "₹900/month",
     code: 104,
   },
+
   // Inverter code=106
+
   {
     id: 22,
     name: "Inverter",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/6/Inverter-PNG-Clipart.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -414,8 +406,7 @@ const services = [
   {
     id: 23,
     name: "Inverter 2",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/7/Inverter-PNG-Picture.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -433,7 +424,7 @@ const services = [
     id: 24,
     name: "Inverter-3",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/Inverter-Transparent-Background.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -451,8 +442,7 @@ const services = [
   {
     id: 25,
     name: "Construction",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/21/3D-Printer-PNG-Isolated-HD.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -470,7 +460,7 @@ const services = [
     id: 26,
     name: "Construction 2",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/16/Measure-Centimeter-Tape-PNG-Image.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -487,8 +477,7 @@ const services = [
   {
     id: 27,
     name: "Construction-3",
-    image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://www.pngmart.com/files/16/Carpenter-Hammer-PNG-Image.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -504,9 +493,9 @@ const services = [
   },
   {
     id: 28,
-    name: "Construction-3",
+    name: "Construction-4",
     image:
-      "https://images.pexels.com/photos/1591981/pexels-photo-1591981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/15/Silhouette-Excavator-PNG-Transparent-HD-Photo.png",
     description: "Fully Automatic RO, 7 Kg Capacity.",
     variants: {
       "Top Load": "₹900/month",
@@ -523,9 +512,8 @@ const services = [
   // Room heater code=107
   {
     id: 29,
-    name: "Room Heater",
-    image:
-      "https://images.pexels.com/photos/5582777/pexels-photo-5582777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    name: "Room Heater 1",
+    image: "https://www.pngmart.com/files/7/Micathermic-Heater-PNG-Image.png",
     description: "Portable Room Heater, Adjustable Temperature.",
     variants: {
       "Oil Filled": "₹700/month",
@@ -541,9 +529,9 @@ const services = [
   },
   {
     id: 30,
-    name: "Room Heater",
+    name: "Room Heater 2",
     image:
-      "https://images.pexels.com/photos/5582777/pexels-photo-5582777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://www.pngmart.com/files/6/Space-Heater-Transparent-Images-PNG.png",
     description: "Portable Room Heater, Adjustable Temperature.",
     variants: {
       "Oil Filled": "₹700/month",

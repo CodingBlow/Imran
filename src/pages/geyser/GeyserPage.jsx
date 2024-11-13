@@ -6,7 +6,7 @@ import services from "../HotServices";
 import GeyserItem from "./GeyserItem";
 
 const GeyserPage = () => {
-  const acServices = services.filter((service) => service.code === 101);
+  const acServices = services.filter((service) => service.code === 105);
 
   return (
     <Helmet title="Geysers">

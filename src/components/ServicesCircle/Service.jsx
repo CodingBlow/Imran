@@ -7,7 +7,8 @@ const Services = () => {
   const services = [
     {
       name: "Room Heater",
-      image: AC,
+      image:
+        "https://imgs.search.brave.com/KJ7hzTCObsVeawIFiu3zCXLBM6gxEjvSiQhwWpZ533o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvNi9TcGFj/ZS1IZWF0ZXItRG93/bmxvYWQtUE5HLUlt/YWdlLnBuZw",
       link: "/room-heater",
     },
     {
