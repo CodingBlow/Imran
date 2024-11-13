@@ -1,11 +1,19 @@
+import WM1 from "../../src/assets/all-images/Washing machine/3.jpg"
+import WM2 from "../../src/assets/all-images/Washing machine/4.jpg"
+import WAC1 from "../../src/assets/all-images/Window ac/18.jpg"
+import Refrigerator1 from "../../src/assets/all-images/refrigrator/1.jpg"
+import Refrigerator2 from "../../src/assets/all-images/refrigrator/8.jpg"
+import Geyser1 from "../../src/assets/all-images/Geyser/geyser2.webp"
+import SplitAC1 from "../../src/assets/all-images/Split AC/5.jpg"
+import Heater1 from "../../src/assets/all-images/heater/1.jpg"
+
 const services = [
   {
     id: 1,
     name: "Window AC",
     code: 100,
     price: "₹2,000/month",
-    image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: WAC1 ,
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
       "1.0 TON": {
@@ -37,8 +45,7 @@ const services = [
     name: "Refrigerator",
     code: 104,
     price: "₹1,200/month",
-    image:
-      "https://www.pngmart.com/files/6/LG-Refrigerator-PNG-Background-Image.png",
+    image:Refrigerator1,
     description: "Double Door Refrigerator, 250L Capacity, Energy Efficient.",
     variants: {
       Small: {
@@ -70,8 +77,7 @@ const services = [
     name: "Washing Machine",
     code: 102,
     price: "₹900/month",
-    image:
-      "https://www.pngmart.com/files/6/Washing-Machine-Download-PNG-Image.png",
+    image: WM1 ,
     description: "Fully Automatic Washing Machine, 7 Kg Capacity.",
     variants: {
       "Top Load": {
@@ -96,7 +102,7 @@ const services = [
     name: "Geyser",
     code: 105,
     price: "₹700/month",
-    image: "https://www.pngmart.com/files/6/Geyser-PNG-File.png",
+    image: Geyser1,
     description: "Instant Geyser, 3L Capacity, Energy Efficient.",
     variants: {
       Electric: {
@@ -121,7 +127,7 @@ const services = [
     name: "Oil Heater",
     code: 107,
     price: "₹600/month",
-    image: "https://www.pngmart.com/files/6/Space-Heater-PNG-Picture.png",
+    image: Heater1,
     description: "Portable Room Heater, Adjustable Temperature.",
     variants: {
       "11 FIN": {
@@ -141,8 +147,7 @@ const services = [
     name: "Split AC",
     code: 100,
     price: "₹2,000/month",
-    image:
-      "https://images.pexels.com/photos/16592625/pexels-photo-16592625/free-photo-of-air-conditioner-in-a-house.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image:SplitAC1,
     description: "1.5 Ton Split AC, Energy Efficient, Remote Control Included.",
     variants: {
       "1.0 TON": {
@@ -173,8 +178,7 @@ const services = [
     name: "Washing Machine",
     code: 102,
     price: "₹900/month",
-    image:
-      "https://www.pngmart.com/files/6/Washing-Machine-PNG-Transparent-Image.png",
+    image: WM2,
     description: "Fully Automatic Washing Machine, 7 Kg Capacity.",
     variants: {
       "Top Load": {
@@ -225,8 +229,7 @@ const services = [
     name: "Refrigerator",
     code: 104,
     price: "₹900/month",
-    image:
-      "https://www.pngmart.com/files/6/LG-Refrigerator-Download-PNG-Image.png",
+    image: Refrigerator2,
     description: "Double Door Refrigerator, 250L Capacity, Energy Efficient.",
     variants: {
       Small: {
