@@ -23,7 +23,7 @@ const socialLinks = [
   },
   {
     url: "#",
-    icon: "ri-twitter-line",
+    icon: "ri-youtube-line",
   },
 ];
 

@@ -171,12 +171,12 @@ const Footer = () => {
                 <i className="ri-facebook-fill"></i>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://youtube.com/@smart_eager?si=Un9G6htgOv0Wqa7D"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", fontSize: "1.5rem", margin: "0 10px" }}
               >
-                <i className="ri-twitter-fill"></i>
+                <i className="ri-youtube-fill"></i>
               </a>
               <a
                 href="https://linkedin.com"
