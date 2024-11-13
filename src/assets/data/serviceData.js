@@ -35,24 +35,14 @@ const serviceData = [
     icon: "ri-shape-line",
     desc: "Top-loading and front-loading washing machines for rent to keep your laundry fresh.",
   },
-  {
-    id: 7,
-    title: "LED/Television Rental",
-    icon: "ri-tv-line",
-    desc: "Quality LED TVs available for rent to provide you with an immersive viewing experience.",
-  },
+
   {
     id: 8,
     title: "Electrician & Plumber Services",
     icon: "ri-tools-line",
     desc: "Professional electrician and plumber services to meet your household needs efficiently.",
   },
-  {
-    id: 9,
-    title: "Inverter Rental",
-    icon: "ri-battery-line",
-    desc: "Reliable inverters for uninterrupted power supply to keep your appliances running smoothly.",
-  },
+
   {
     id: 10,
     title: "Construction Equipment Rental",

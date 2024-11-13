@@ -7,11 +7,7 @@ import SummerItem from "./SummerItem";
 
 const SummerPage = () => {
   const acServices = services.filter(
-    (service) =>
-      service.code === 102 ||
-      service.code === 104 ||
-      service.code === 100 ||
-      service.code === 101
+    (service) => service.code === 104 || service.code === 100
   );
 
   return (

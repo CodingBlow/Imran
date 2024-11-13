@@ -25,6 +25,7 @@ const RentServicesHomepage = ({ onSummerClick, onWinterClick }) => {
             </div>
           </div>
         </Link>
+
         {/* Summer Rentals Card */}
         <Link to="/summer-rentals" style={styles.link}>
           <div
@@ -57,12 +58,14 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    marginTop: "1rem",
+    marginBottom: "1rem",
   },
   title: {
     fontSize: "2.5rem",
     fontWeight: "bold",
     color: "#1a202c",
-    marginBottom: "1.5rem", // Reduced margin-bottom for less vertical space
+    marginBottom: "1.5rem",
     textAlign: "center",
   },
   cardContainer: {
@@ -71,6 +74,8 @@ const styles = {
     gap: "1.5rem",
     justifyContent: "center",
     flexWrap: "wrap",
+    marginTop: "1rem",
+    marginBottom: "1rem",
   },
   card: {
     width: "260px",
@@ -117,23 +122,23 @@ const styles = {
   // Media query for responsiveness
   "@media (max-width: 768px)": {
     container: {
-      padding: "1rem", // Reduced padding on smaller screens
-      marginTop: "0.5rem", // Reduced top margin
-      marginBottom: "0.5rem", // Reduced bottom margin
+      padding: "1rem",
+      marginTop: "0.5rem",
+      marginBottom: "0.5rem",
     },
     title: {
       fontSize: "2rem",
-      marginBottom: "1rem", // Further reduced margin-bottom
+      marginBottom: "1rem",
     },
     card: {
       width: "100%",
-      padding: "0.8rem", // Reduced padding inside the cards
+      padding: "0.8rem",
     },
     cardContainer: {
       flexDirection: "column",
-      gap: "1rem", // Adjusted gap between cards
-      marginTop: "0.5rem", // Further reduced vertical spacing
-      marginBottom: "0.5rem", // Further reduced vertical spacing
+      gap: "1rem",
+      marginTop: "0.5rem",
+      marginBottom: "0.5rem",
     },
   },
 };

@@ -37,7 +37,7 @@ const HotOffers = () => {
 const styles = {
   container: {
     maxWidth: "1200px",
-    margin: "0",
+    margin: "0 auto",
   },
 
   grid: {
@@ -55,24 +55,24 @@ const styles = {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
     transition: "box-shadow 0.3s ease",
     border: "1px solid #eee",
-    padding: "0.5rem", // Reduce padding for a smaller appearance
-    transform: "scale(0.95)", // Slightly scale down the card
+    padding: "0.5rem",
+    transform: "scale(0.95)",
   },
 
   imageContainer: {
     position: "relative",
-    paddingTop: "75%", // 4:3 Aspect ratio
-    overflow: "hidden",
+    width: "100%",
+    height: "180px", // Set a fixed height for consistency
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     background: "#f5f5f5",
   },
 
   image: {
-    position: "absolute",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
+    maxWidth: "100%",
+    maxHeight: "100%",
+    objectFit: "contain", // Ensures the image is not cropped
     transition: "transform 0.3s ease",
   },
 
@@ -88,15 +88,15 @@ const styles = {
   },
 
   price: {
-    color: "#333", // Color for the whole price text
+    color: "#333",
     marginBottom: "1rem",
     fontSize: "1rem",
   },
 
   priceAmount: {
-    color: "#ff5733", // Bright color for the price amount
-    fontWeight: "700", // Bold font for emphasis
-    fontSize: "1.2rem", // Slightly larger font size
+    color: "#ff5733",
+    fontWeight: "700",
+    fontSize: "1.2rem",
   },
 
   link: {

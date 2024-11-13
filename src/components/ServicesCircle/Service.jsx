@@ -38,12 +38,6 @@ const Services = () => {
         "https://5.imimg.com/data5/HU/DJ/FB/SELLER-5577939/geyser-ms-35-50l-jpg.jpg",
       link: "/Geyser",
     },
-    {
-      name: "Inverter",
-      image:
-        "https://rukminim1.flixcart.com/image/1664/1664/inverter/p/y/c/900-va-ups-eb-microtek-original-imae47yfjy8zzhg7.jpeg?q=90",
-      link: "/inverter-rental",
-    },
   ];
 
   return (
@@ -79,18 +73,29 @@ const Services = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             onClick={() => (window.location.href = service.link)}
           >
-            <img
-              src={service.image}
-              alt={service.name}
+            <div
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
-                transition: "opacity 0.3s",
+                overflow: "hidden",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = 0.8)}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = 1)}
-            />
+            >
+              <img
+                src={service.image}
+                alt={service.name}
+                style={{
+                  objectFit: "contain", // Ensures the image maintains its aspect ratio without cropping
+                  width: "100%", // Ensure the image takes up the full width of the container
+                  height: "100%", // Ensure the image takes up the full height of the container
+                  transition: "opacity 0.3s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = 0.8)}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = 1)}
+              />
+            </div>
             <div
               style={{
                 position: "absolute",

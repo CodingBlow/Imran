@@ -28,7 +28,7 @@ const RentalFormPage = () => {
     setIsSubmitting(true); // Set submitting state to true
     setSubmitSuccess(false); // Reset success state
     setSubmitError(null); // Reset error state
-   
+
     // Form data including the service name
     const formData = {
       serviceName: service.name, // This sends the service name to the backend
@@ -111,12 +111,13 @@ const RentalFormPage = () => {
         src={service.image}
         alt={service.name}
         style={{
-          width: "100%",
-          height: "200px",
-          objectFit: "cover",
+          width: "100%", // Makes the image fill the container width
+          maxHeight: "200px", // Set a maximum height to avoid it becoming too large
+          objectFit: "contain", // Ensures the image maintains its aspect ratio without cropping
           borderRadius: "8px",
         }}
       />
+
       <p>{service.name}</p>
 
       {/* Display selected variant and duration */}

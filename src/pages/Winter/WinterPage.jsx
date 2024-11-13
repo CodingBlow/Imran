@@ -8,7 +8,7 @@ import WinterItem from "./WinterItem";
 const WinterPage = () => {
   const acServices = services.filter(
     (service) =>
-      service.code === 102 || service.code === 105 || service.code === 107
+      service.code === 105 || service.code === 107
   );
 
   return (

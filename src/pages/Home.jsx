@@ -5,14 +5,13 @@ import Helmet from "../components/Helmet/Helmet";
 import Service from "../components/ServicesCircle/Service";
 import { Container, Row, Col } from "reactstrap";
 
-import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
-import Season_card from "./Season_Homepage";
+
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
 
 import GoogleMap from "../components/GoogleMap/GoogleMap";
-import FindRental from "../components/UI/FindRental";
+
 import HotOffers from "../components/HotOffer/HotOffer";
 
 const Home = () => {
@@ -22,8 +21,6 @@ const Home = () => {
 
       <HeroSlider />
 
-      <Season_card />
-
       {/* =========== about section ================ */}
       {/* <AboutSection /> */}
       {/* ========== services section ============ */}
@@ -31,7 +28,7 @@ const Home = () => {
       {/* Choose your rental services */}
       <Container>
         <Row>
-          <Col lg="12" className="mb-5 text-center">
+          <Col lg="12" className="mt-4 mb-3 text-center">
             <h6 className="section__subtitle">See our</h6>
             <h2 className="section__title">Popular Services</h2>
           </Col>
@@ -53,7 +50,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-{/* ========== services section ============ */}
+      {/* ========== services section ============ */}
       <section>
         <Container>
           <Row>

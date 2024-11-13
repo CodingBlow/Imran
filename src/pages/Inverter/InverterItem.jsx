@@ -11,10 +11,16 @@ const InverterItem = ({ item }) => {
 
   return (
     <Card className="mb-3">
-      <img
+       <img
         src={item.image}
         alt={item.name}
-        style={{ width: "100%", height: "200px", objectFit: "cover" }}
+        style={{
+          width: "100%",
+          height: "auto",
+          maxHeight: "200px", // Ensure height adjusts based on the width to maintain aspect ratio
+          objectFit: "contain", // Adjust this to "contain" to show the entire image without cropping
+          borderRadius: "8px",
+        }}
       />
       <CardBody>
         <CardTitle tag="h5">{item.name}</CardTitle>
