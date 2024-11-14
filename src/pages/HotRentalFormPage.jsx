@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+
 const RentalFormPage = () => {
   const location = useLocation();
   const service = location.state?.service;
-  const selectedVariant = location.state?.selectedVariant; // Get the selected variant from state
-  const selectedDuration = location.state?.selectedDuration; // Get the selected duration from state
+  const selectedVariant = location.state?.selectedVariant;
+  const selectedDuration = location.state?.selectedDuration;
 
   const [fullName, setFullName] = useState("");
   const [whatsappNumber, setWhatsAppNumber] = useState("");
@@ -15,23 +16,54 @@ const RentalFormPage = () => {
   const [email, setEmail] = useState("");
   const [deliveryAddress, setDeliveryAddress] = useState("");
   const [message, setMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false); // To track submission state
-  const [submitSuccess, setSubmitSuccess] = useState(false); // To track submission success
-  const [submitError, setSubmitError] = useState(null); // To track submission error
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLatitude(position.coords.latitude);
+          setLongitude(position.coords.longitude);
+        },
+        (error) => {
+          console.error("Error fetching location", error);
+          toast.warn(
+            "Unable to fetch location. Please enable location permissions.",
+            {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              transition: Bounce,
+            }
+          );
+        }
+      );
+    }
+  }, []);
+
   if (!service) {
     return <p>Service not found</p>;
   }
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent the default form submission
-    setIsSubmitting(true); // Set submitting state to true
-    setSubmitSuccess(false); // Reset success state
-    setSubmitError(null); // Reset error state
+    event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitSuccess(false);
+    setSubmitError(null);
 
-    // Form data including the service name
     const formData = {
-      serviceName: service.name, // This sends the service name to the backend
+      serviceName: service.name,
       selectedVariant,
       selectedDuration,
       fullName,
@@ -40,6 +72,8 @@ const RentalFormPage = () => {
       email,
       deliveryAddress,
       message,
+      latitude,
+      longitude,
     };
 
     try {
@@ -55,16 +89,15 @@ const RentalFormPage = () => {
       );
 
       if (response.ok) {
-        const result = await response.json();
-        console.log("Success:", result);
-        setSubmitSuccess(true); // Set success state to true
-        // Optionally reset form fields
+        setSubmitSuccess(true);
         setFullName("");
         setWhatsAppNumber("");
         setAlternateNumber("");
         setEmail("");
         setDeliveryAddress("");
         setMessage("");
+        setLatitude(null);
+        setLongitude(null);
         toast.success("Booking submitted successfully", {
           position: "top-right",
           autoClose: 5000,
@@ -81,10 +114,9 @@ const RentalFormPage = () => {
         throw new Error("Submission failed: " + response.statusText);
       }
     } catch (error) {
-      console.error("Error:", error);
       setSubmitError(
         "An error occurred while submitting the form. Please try again."
-      ); // Set error state
+      );
       toast.error(
         "An error occurred while submitting the form. Please try again.",
         {
@@ -100,7 +132,7 @@ const RentalFormPage = () => {
         }
       );
     } finally {
-      setIsSubmitting(false); // Reset submitting state
+      setIsSubmitting(false);
     }
   };
 
@@ -111,16 +143,15 @@ const RentalFormPage = () => {
         src={service.image}
         alt={service.name}
         style={{
-          width: "100%", // Makes the image fill the container width
-          maxHeight: "200px", // Set a maximum height to avoid it becoming too large
-          objectFit: "contain", // Ensures the image maintains its aspect ratio without cropping
+          width: "100%",
+          maxHeight: "200px",
+          objectFit: "contain",
           borderRadius: "8px",
         }}
       />
 
       <p>{service.name}</p>
 
-      {/* Display selected variant and duration */}
       <div style={{ margin: "10px 0" }}>
         <strong>Selected Variant:</strong> {selectedVariant} <br />
         <strong>Selected Duration:</strong> {selectedDuration} <br />
@@ -200,6 +231,7 @@ const RentalFormPage = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
+
         <button type="submit" style={submitButtonStyle} disabled={isSubmitting}>
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
@@ -208,7 +240,6 @@ const RentalFormPage = () => {
   );
 };
 
-// Styles for form components
 const formGroupStyle = { marginBottom: "15px" };
 const inputStyle = {
   width: "100%",

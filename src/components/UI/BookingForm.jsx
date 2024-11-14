@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, FormGroup, Label, Input, Button, Alert } from "reactstrap";
 import CommonSection from "./CommonSection";
 import { toast, Bounce } from "react-toastify";
@@ -65,11 +65,41 @@ const BookingForm = () => {
     service: "",
     details: "",
   });
+  const [location, setLocation] = useState({ latitude: null, longitude: null });
   const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLocation({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          });
+        },
+        (error) => {
+          console.error("Error fetching location", error);
+          toast.warn(
+            "Unable to fetch location. Please enable location permissions.",
+            {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              transition: Bounce,
+            }
+          );
+        }
+      );
+    }
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    // Clear service if category is changed
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -79,13 +109,15 @@ const BookingForm = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    const dataToSend = { ...formData, ...location };
+
     try {
       const response = await fetch(
-        "https://print-hub-cb65e-default-rtdb.firebaseio.com/Rent.json",
+        "https://print-hub-cb65e-default-rtdb.firebaseio.com/Maintainance.json",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(dataToSend),
         }
       );
 
@@ -101,6 +133,7 @@ const BookingForm = () => {
           service: "",
           details: "",
         });
+        setLocation({ latitude: null, longitude: null });
         toast.success("Form submitted successfully", {
           position: "top-right",
           autoClose: 5000,
@@ -115,7 +148,7 @@ const BookingForm = () => {
         navigate("/");
       } else {
         setSubmissionStatus("error");
-        toast.error('Something went wrong', {
+        toast.error("Something went wrong", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -125,10 +158,11 @@ const BookingForm = () => {
           progress: undefined,
           theme: "colored",
           transition: Bounce,
-          });
+        });
       }
     } catch (error) {
       setSubmissionStatus("error");
+      console.error("Error submitting form:", error);
     }
   };
 
@@ -163,6 +197,7 @@ const BookingForm = () => {
             style={{ borderRadius: "5px", padding: "10px" }}
           />
         </FormGroup>
+
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label
             for="lastName"
@@ -181,6 +216,7 @@ const BookingForm = () => {
             style={{ borderRadius: "5px", padding: "10px" }}
           />
         </FormGroup>
+
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label for="email" style={{ fontSize: "14px", fontWeight: "bold" }}>
             Email
@@ -196,6 +232,7 @@ const BookingForm = () => {
             style={{ borderRadius: "5px", padding: "10px" }}
           />
         </FormGroup>
+
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label for="phone" style={{ fontSize: "14px", fontWeight: "bold" }}>
             Phone Number
@@ -211,6 +248,7 @@ const BookingForm = () => {
             style={{ borderRadius: "5px", padding: "10px" }}
           />
         </FormGroup>
+
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label for="address" style={{ fontSize: "14px", fontWeight: "bold" }}>
             Address
@@ -226,6 +264,7 @@ const BookingForm = () => {
             style={{ borderRadius: "5px", padding: "10px" }}
           />
         </FormGroup>
+
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label
             for="categorySelection"
@@ -250,6 +289,7 @@ const BookingForm = () => {
             ))}
           </Input>
         </FormGroup>
+
         {formData.category && (
           <FormGroup style={{ marginBottom: "15px" }}>
             <Label
@@ -278,6 +318,7 @@ const BookingForm = () => {
             </Input>
           </FormGroup>
         )}
+
         <FormGroup style={{ marginBottom: "15px" }}>
           <Label for="details" style={{ fontSize: "14px", fontWeight: "bold" }}>
             Additional Details
@@ -293,6 +334,7 @@ const BookingForm = () => {
             style={{ borderRadius: "5px", padding: "10px" }}
           />
         </FormGroup>
+
         <Button
           type="submit"
           color="primary"
