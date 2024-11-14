@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/car-repair.png"; 
+import logo from "../../assets/all-images/Logo-Main23.png"; 
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa"; // Importing icons for WhatsApp and Call Now
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
       justifyContent: "space-between",
     },
     logo: {
-      height: "40px",
+      height: "60px",
       width: "auto",
     },
     menuIcon: {

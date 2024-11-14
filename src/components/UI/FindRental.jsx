@@ -10,7 +10,7 @@ const FindRental = () => {
     "Sector 64", "Sector 63", "Sector 62", "Sector 55", "Sector 54", 
     "Sector 56", "Sector 53", "Sector 42", "Sector 44", "Sector 45", 
     "Sector 38", "Sector 34", "Sector 33", "Sector 10", "Sector 11", 
-    "Sector 37", "Sector 37B", "Sector 37D"
+    "Sector 37", "Sector 37B", "Sector 37D" ,"Maneshar"
   ];
 
   // Inline CSS styles

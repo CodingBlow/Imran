@@ -9,7 +9,7 @@
 
 .slider__item-01 {
   background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
-    url("https://images.pexels.com/photos/7347538/pexels-photo-7347538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    url("../assets/all-images/Split-AC-Slide6.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@
 
 .slider__item-02 {
   background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
-    url("../assets/all-images/item02-slider.jpg");
+    url("../assets/all-images/Oil-Heaters-Slide2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,7 @@
 
 .slider__item-03 {
   background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
-    url("https://res.cloudinary.com/urbanclap/image/upload/images/supply/customer-app-supply/1687327309842-5c0a9e.jpeg");
+    url("../assets/all-images/Refrigrator-Slide4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +33,23 @@
 
 .slider__item-04 {
   background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
-    url("../assets/all-images/refrigerator-Repair.jpg");
+    url("../assets/all-images/Refrigrator-Service-Slide3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-05 {
+  background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
+    url("../assets/all-images/AC-Repair-Slide1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-06 {
+  background: linear-gradient(rgba(0, 13, 107, 0.5), rgba(0, 13, 107, 0.5)),
+    url("../assets/all-images/Repair-Nec-Slide5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

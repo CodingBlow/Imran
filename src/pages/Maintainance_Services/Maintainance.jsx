@@ -322,28 +322,28 @@ const ACRepairService = () => {
       location: "Delhi",
       image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       rating: 4,
-      text: "Kudos to team Onsitego for the great service. I wasn't sure about buying the plan initially but now I'm sure about extending it for longer.",
+      text: "Kudos to team Smart Eager for the great service. I wasn't sure about buying the plan initially but now I'm sure about extending it for longer.",
     },
     {
       name: "Taufique Alam",
       location: "Delhi",
       rating: 4,
       image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      text: "I am very happy with the quality service you provided. I contacted Onsitego to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
+      text: "I am very happy with the quality service you provided. I contacted Smart Eager to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
     },
     {
       name: "Taufique Alam",
       location: "Delhi",
       rating: 4,
       image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      text: "I am very happy with the quality service you provided. I contacted Onsitego to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
+      text: "I am very happy with the quality service you provided. I contacted Smart Eager to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
     },
     {
       name: "Taufique Alam",
       location: "Delhi",
       rating: 4,
       image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      text: "I am very happy with the quality service you provided. I contacted Onsitego to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
+      text: "I am very happy with the quality service you provided. I contacted Smart Eager to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
     },
   ];
 
@@ -390,7 +390,7 @@ const ACRepairService = () => {
         </ImageContainer>
 
         <ContentSection>
-          <h1>AC Repair and Service in Delhi</h1>
+          <h1>AC Repair and Service in  DELHI, GURUGRAM, MANESAR</h1>
           <p>
             Sit back, relax and let us take care of your AC servicing & repairs.
           </p>

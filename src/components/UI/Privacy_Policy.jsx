@@ -99,7 +99,7 @@ const PrivacyPolicy = () => {
                     day of the week. If your building lacks a lift or you do not
                     have permission to use it, additional labor charges may
                     apply for carrying products up stairs. Currently, our
-                    services cover the following areas: Badshahpur, Sector 49,
+                    services cover the following areas: Maneshar , Badshahpur, Sector 49,
                     Sector 70, Sector 71, Sector 69, Sector 75, Sector 70A,
                     Sector 66, Sector 67, Sector 67A, Sector 64, Sector 63,
                     Sector 62, Sector 55, Sector 54, Sector 56, Sector 53,

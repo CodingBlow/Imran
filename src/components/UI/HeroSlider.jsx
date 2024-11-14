@@ -23,7 +23,7 @@ const HeroSlider = () => {
         <Container>
           <div className="slider__content">
             {/* <h4 className="text-light mb-3">Rent an AC for Just $50/Da</h4> */}
-            <h1 className="text-light mb-4">Stay Cool with Our AC Rentals!</h1>
+            <h1 className="text-light mb-4">Beat the Heat and go the chill</h1>
             <button className="btn reserve__btn mt-4">
               <Link to="/home/allproducts">Rent Now</Link>
             </button>
@@ -35,7 +35,7 @@ const HeroSlider = () => {
         <Container>
           <div className="slider__content">
             {/* <h4 className="text-light mb-3">Washing Machine Rental at $30/Day</h4> */}
-            <h1 className="text-light mb-4">Make Your LED Repair Easy!</h1>
+            <h1 className="text-light mb-4">Beat the chill  and go the Heat</h1>
             <button className="btn reserve__btn mt-4">
               <Link to="home/allproducts">Rent Now</Link>
             </button>
@@ -47,7 +47,7 @@ const HeroSlider = () => {
         <Container>
           <div className="slider__content">
             {/* <h4 className="text-light mb-3">RO Water Purifier for $20/Day</h4> */}
-            <h1 className="text-light mb-4">Ensure Safe Drinking Water!</h1>
+            <h1 className="text-light mb-4">Cooling solutions for every home</h1>
             <button className="btn reserve__btn mt-4">
               <Link to="home/allproducts">Rent Now</Link>
             </button>
@@ -58,7 +58,31 @@ const HeroSlider = () => {
         <Container>
           <div className="slider__content">
             {/* <h4 className="text-light mb-3">RO Water Purifier for $20/Day</h4> */}
-            <h1 className="text-light mb-4">Reliable Refrigerator Repairs – Keep It Cool!</h1>
+            <h1 className="text-light mb-4">Quality service at affordable prices</h1>
+            <button className="btn reserve__btn mt-4">
+              <Link to="/home/allproducts">Rent Now</Link>
+              
+            </button>
+          </div>
+        </Container>
+      </div>
+      <div className="slider__item slider__item-05 mt0">
+        <Container>
+          <div className="slider__content">
+            {/* <h4 className="text-light mb-3">RO Water Purifier for $20/Day</h4> */}
+            <h1 className="text-light mb-4">Quality service at reasonable prices!</h1>
+            <button className="btn reserve__btn mt-4">
+              <Link to="/home/allproducts">Rent Now</Link>
+              
+            </button>
+          </div>
+        </Container>
+      </div>
+      <div className="slider__item slider__item-06 mt0">
+        <Container>
+          <div className="slider__content">
+            {/* <h4 className="text-light mb-3">RO Water Purifier for $20/Day</h4> */}
+            <h1 className="text-light mb-4">We treat your home like you treat your home</h1>
             <button className="btn reserve__btn mt-4">
               <Link to="/home/allproducts">Rent Now</Link>
               
