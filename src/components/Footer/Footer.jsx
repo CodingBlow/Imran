@@ -167,14 +167,14 @@ const Footer = () => {
         <Row>
           <Col className="text-center mt-4">
             <div>
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", fontSize: "1.5rem", margin: "0 10px" }}
               >
                 <i className="ri-facebook-fill"></i>
-              </a>
+              </a> */}
               <a
                 href="https://youtube.com/@smart_eager?si=Un9G6htgOv0Wqa7D"
                 target="_blank"
@@ -183,16 +183,16 @@ const Footer = () => {
               >
                 <i className="ri-youtube-fill"></i>
               </a>
-              <a
+              {/* <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", fontSize: "1.5rem", margin: "0 10px" }}
               >
                 <i className="ri-linkedin-fill"></i>
-              </a>
+              </a> */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/smart_eager_airconditioning/profilecard/?igsh=ZmppZjh5bjFpMDdw"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", fontSize: "1.5rem", margin: "0 10px" }}
