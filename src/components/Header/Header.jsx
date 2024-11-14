@@ -172,6 +172,12 @@ const Navbar = () => {
           ))}
         </ul>
 
+        {/* Call Now Button with Phone Number (Visible only on desktop) */}
+        <a href="tel:+919306186668" style={styles.callNowButton}>
+          <FaPhoneAlt style={{ fontSize: "20px" }} />
+          <span style={styles.callNowText}>+919306186668</span>
+        </a>
+
         {/* WhatsApp Button */}
         <a
           href="https://wa.me/+919306186668"
@@ -180,12 +186,6 @@ const Navbar = () => {
           style={styles.whatsappButton}
         >
           <FaWhatsapp style={{ fontSize: "24px" }} />
-        </a>
-
-        {/* Call Now Button with Phone Number (Visible only on desktop) */}
-        <a href="tel:+919306186668" style={styles.callNowButton}>
-          <FaPhoneAlt style={{ fontSize: "20px" }} />
-          <span style={styles.callNowText}>+919306186668</span>
         </a>
       </div>
     </nav>
