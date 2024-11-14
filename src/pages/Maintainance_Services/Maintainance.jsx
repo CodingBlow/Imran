@@ -17,7 +17,6 @@ import {
   FaMedal,
 } from "react-icons/fa";
 
-
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -165,6 +164,7 @@ const FeatureColumn = styled.div`
     }
   }
 `;
+
 const ReviewSliderSection = styled.section`
   padding: 4rem 0;
   margin-bottom: 2rem;
@@ -181,7 +181,7 @@ const SliderTrack = styled.div`
   display: flex;
   gap: 2rem;
   padding: 1rem;
-  animation: scroll 40s linear infinite;
+  animation: scroll 25s linear infinite;
 
   &:hover {
     animation-play-state: paused;
@@ -292,14 +292,14 @@ const ACRepairService = () => {
       </ReviewSliderSection>
     );
   };
-  
+
   const maintenanceFeatures = [
     { icon: <FaBolt />, text: "Improve Cooling" },
     { icon: <FaMoneyBill />, text: "Reduce Electricity Bills" },
-    { icon: <FaClock />, text: "Increase AC's Lifespan" },
+    { icon: <FaClock />, text: "Increase Appliance Lifespan" },
     { icon: <FaTools />, text: "Minimize Breakdowns" },
     { icon: <FaShieldAlt />, text: "Enhance Energy Efficiency" },
-    { icon: <FaWrench />, text: "Maximize AC Performance" },
+    { icon: <FaWrench />, text: "Maximize Performance" },
   ];
 
   const reviews = [
@@ -313,15 +313,15 @@ const ACRepairService = () => {
     {
       name: "Tapan Roy",
       location: "Delhi",
-      image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       rating: 4,
+      image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "I just had to make one call requesting for service and the engineer was home the next day with all the necessary tools. I highly recommend your service to everyone.",
     },
     {
       name: "Ajay Gahlot",
       location: "Delhi",
-      image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       rating: 4,
+      image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Kudos to team Smart Eager for the great service. I wasn't sure about buying the plan initially but now I'm sure about extending it for longer.",
     },
     {
@@ -331,51 +331,34 @@ const ACRepairService = () => {
       image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "I am very happy with the quality service you provided. I contacted Smart Eager to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
     },
-    {
-      name: "Taufique Alam",
-      location: "Delhi",
-      rating: 4,
-      image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      text: "I am very happy with the quality service you provided. I contacted Smart Eager to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
-    },
-    {
-      name: "Taufique Alam",
-      location: "Delhi",
-      rating: 4,
-      image: "https://plus.unsplash.com/premium_photo-1677231559666-53bed9be43ba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      text: "I am very happy with the quality service you provided. I contacted Smart Eager to check my AC, as there was no cooling and they sent an engineer next day itself for gas charging. He was polite and shared basic tips to maintain the AC.",
-    },
   ];
-
   
 
   const serviceFeatures = [
-    { icon: <FaWrench />, text: "AC Repairs & Maintenance Service" },
-    { icon: <FaCheckCircle />, text: "High-Quality AC Repairs" },
-    { icon: <FaUserTie />, text: "Experienced AC Service Engineers" },
-    { icon: <FaShieldAlt />, text: "90-day warranty on spare parts" },
-    {
-      icon: <FaCalendarCheck />,
-      text: "AC AMC (Annual Maintenance) Plans Available",
-    },
-    { icon: <FaMedal />, text: "30-day warranty on service" },
+    { icon: <FaWrench />, text: "AC Repair & Service" },
+    { icon: <FaCheckCircle />, text: "Refrigerator Repair & Service" },
+    { icon: <FaUserTie />, text: "RO Water Purifier Repair & Service" },
+    { icon: <FaCalendarCheck />, text: "Geyser Repair & Service" },
+    { icon: <FaMedal />, text: "Certified Technicians" },
   ];
 
   const benefits = [
     {
       icon: <FaUserCog />,
-      title: "Qualified Engineers",
-      description: "In-house AC Technicians with 10+ years of experience",
+      title: "Trained Technicians",
+      description: "Our technicians are highly skilled and certified.",
     },
     {
-      icon: <FaTools />,
-      title: "High-Quality AC Repairing",
-      description: "Premium spare parts with extended warranty",
+      icon: <FaShieldAlt />,
+      title: "Guaranteed Satisfaction",
+      description:
+        "Customer satisfaction is our top priority. We ensure quality service every time.",
     },
     {
       icon: <FaStar />,
-      title: "Service Expertise",
-      description: "Trusted by 80 Lakh+ customers",
+      title: "Affordable Pricing",
+      description:
+        "Our services are competitively priced to give you the best value.",
     },
   ];
 
@@ -385,24 +368,25 @@ const ACRepairService = () => {
         <ImageContainer>
           <StyledImage
             src="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg"
-            alt="AC Repair"
+            alt="AC Repair and Other Services"
           />
         </ImageContainer>
 
         <ContentSection>
-          <h1>AC Repair and Service in  DELHI, GURUGRAM, MANESAR</h1>
+          <h1>Home Appliance Repair and Service in DELHI, GURUGRAM, MANESAR</h1>
           <p>
-            Sit back, relax and let us take care of your AC servicing & repairs.
+            Sit back, relax, and let us take care of your AC, Refrigerator, RO Water Purifier, and Geyser servicing & repairs.
           </p>
-          <Link to="/BookingForm"><Button>Get Started</Button></Link>
-          
+          <Link to="/BookingForm">
+            <Button>Get Started</Button>
+          </Link>
         </ContentSection>
       </HeroSection>
 
       <TwoColumnLayout>
         {/* Left Column */}
         <FeatureColumn>
-          <h2>Regular AC Maintenance Helps To</h2>
+          <h2>Regular Appliance Maintenance Helps To</h2>
           <div className="feature-list">
             {maintenanceFeatures.map((feature, index) => (
               <div key={index} className="feature-item">
@@ -415,7 +399,7 @@ const ACRepairService = () => {
 
         {/* Right Column */}
         <FeatureColumn>
-          <h2>AC Repairs & Maintenance Services</h2>
+          <h2>Appliance Repairs & Maintenance Services</h2>
           <div className="feature-list">
             {serviceFeatures.map((feature, index) => (
               <div key={index} className="feature-item">
@@ -447,7 +431,7 @@ const ACRepairService = () => {
           ))}
         </div>
       </FeatureCard>
- 
+
       <ReviewSlider reviews={reviews} />
     </Container>
   );

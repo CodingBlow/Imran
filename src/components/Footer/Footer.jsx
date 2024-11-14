@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import logo from "../../assets/all-images/Logo-Main23.png"; 
 import { Link } from "react-router-dom";
 
 const quickLinks = [
@@ -29,34 +30,38 @@ const Footer = () => {
     >
       <Container>
         <Row>
-          <Col lg="4" md="4" sm="12">
-            <div className="logo footer__logo">
-              <h1>
-                <Link
-                  to="/home"
-                  className="d-flex align-items-center gap-2"
-                  style={{ color: "#fff", textDecoration: "none" }}
-                >
-                  <i className="ri-tools-line"></i>
-                  <span>
-                    Smart <br /> Eager Enterprise
-                  </span>
-                </Link>
-              </h1>
-            </div>
-            <p
-              style={{
-                color: "rgba(255, 255, 255, 0.715)",
-                marginTop: "15px",
-                lineHeight: "30px",
-              }}
-            >
-              We provide top-quality rental services, covering a wide range of
-              essential appliances and equipment—from ACs and refrigerators to
-              construction tools and water purifiers. Our commitment is to make
-              reliable, high-quality rentals accessible and convenient.
-            </p>
-          </Col>
+        <Col lg="4" md="4" sm="12">
+  <div className="logo footer__logo">
+    <Link
+      to="/home"
+      className="d-flex align-items-center"
+      style={{ textDecoration: "none" }}
+    >
+      <img
+        src={logo}
+        alt="Smart Eager Enterprise Logo"
+        style={{
+          width: "180px", // Adjust the width as needed
+          height: "auto",
+          display: "block",
+        }}
+      />
+    </Link>
+  </div>
+  <p
+    style={{
+      color: "rgba(255, 255, 255, 0.715)",
+      marginTop: "15px",
+      lineHeight: "30px",
+    }}
+  >
+    We provide top-quality rental services, covering a wide range of
+    essential appliances and equipment—from ACs and refrigerators to
+    construction tools and water purifiers. Our commitment is to make
+    reliable, high-quality rentals accessible and convenient.
+  </p>
+</Col>
+
 
           <Col lg="2" md="4" sm="6">
             <div className="mb-4">
