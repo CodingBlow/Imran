@@ -1,6 +1,6 @@
 import React from "react";
-import WM from "../../assets/all-images/WashingM.jpg";
-import AC from "../../assets/all-images/AC.jpg";
+import WM from "../../assets/all-images/Washing machine/7.jpg";
+import AC from "../../assets/all-images/Split AC/5.jpg";
 import RO from "../../assets/all-images/RO.jpg";
 
 const Services = () => {
@@ -23,7 +23,7 @@ const Services = () => {
     },
     {
       name: "RO Water Purifier",
-      image: RO,
+      image: "https://www.pngmart.com/files/6/Kent-RO-Water-Purifier-PNG-HD.png",
       link: "/ro-water-purifier-rental",
     },
     {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/all-images/Main-Logo.png"; 
+import logo from "../../assets/car-repair.png"; 
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa"; // Importing icons for WhatsApp and Call Now
 
 const Navbar = () => {
